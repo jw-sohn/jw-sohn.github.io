@@ -1,7 +1,72 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "Countries I've Visited"
+excerpt: "A timeline of my international travels<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<style>
+.timeline {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.year {
+  font-weight: bold;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flag {
+  font-size: 24px;
+}
+</style>
+
+<ul class="timeline">
+  <li>
+    <span class="year">2025</span>
+    <div class="flags">❓</div>
+  </li>
+  <li>
+    <span class="year">2024</span>
+    <div class="flags">
+      🇨🇦 🇬🇷 🇩🇪 🇯🇵 🇦🇹
+    </div>
+  </li>
+  <li>
+    <span class="year">2023</span>
+    <div class="flags">
+      🇩🇪 🇫🇷 🇮🇹 🇨🇭 🇯🇵
+    </div>
+  </li>
+  <li>
+    <span class="year">2017</span>
+    <div class="flags">🇯🇵</div>
+  </li>
+  <li>
+    <span class="year">2016</span>
+    <div class="flags">
+      🇩🇪 🇭🇺 🇨🇿 🇦🇹
+    </div>
+  </li>
+  <li>
+    <span class="year">2015</span>
+    <div class="flags">🇯🇵</div>
+  </li>
+  <li>
+    <span class="year">2007-09</span>
+    <div class="flags">🇺🇸</div>
+  </li>
+</ul>
