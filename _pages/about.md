@@ -38,6 +38,20 @@ Recent Publications
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
   AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop
 
+Preprints
+======
+- **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
+  Jiwoong Sohn*, Xiangru Tang*, Yanjun Shao*, Jaewoo Kang, Mark Gerstein
+
+- **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
+  Hyunjae Kim, Jiwoong Sohn, Qingyu Chen
+
+- **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
+  Yoon Jae Hoon*, Jiwoong Sohn*, Xiangru Tang*, Yanjun Shao*, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
+
+- **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
+  Jiwoong Sohn*, Hyungsoon Hwang*, Sihyun Park, Jiwoo Lee, Xiangru Tang, Yanjun Shao, Nikhil Khandekar, Mark Gerstein, Mujeen Sung, Jaewoo Kang  
+
 Honors and Awards
 ======
 - **Integrated Bachelor's and Master's Scholarship (50% Tuition)** (Sep 2023 - Feb 2025)  
@@ -60,11 +74,11 @@ Education
 - **Korea University** (Sep 2023 - Aug 2025, Early Completion)  
   M.S. in Computer Science and Engineering  
   GPA: 4.44/4.5 (Merit-based Scholarship)  
-  Advisor: Prof. Jaewoo Kang
+  Advisor: [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko)
 
-- **Korea University** (Mar 2016 - Aug 2023)  
+- **Korea University** (Mar 2016 - Aug 2023)
+  B.E. in Artificial Intelligence
   B.S. in Health and Environmental Science  
-  B.E. in Artificial Intelligence  
   Minor in Computer Science and Engineering  
   GPA: 4.0/4.5
 
