@@ -2,7 +2,7 @@
 title: "Machine Learning (COSE362)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/2023-fall-teaching-2
 venue: "Korea University, Department of Computer Science and Engineering"
 date: 2023-09-01
 location: "Seoul, South Korea"
