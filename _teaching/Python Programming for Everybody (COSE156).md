@@ -7,4 +7,5 @@ venue: "Korea University, Department of Computer Science and Engineering"
 date: 2020-09-01
 location: "Seoul, South Korea"
 ---
+
 Teaching Assistant for Python Programming for Everybody (COSE156), an introductory programming course. R
