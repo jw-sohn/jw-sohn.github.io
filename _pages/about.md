@@ -19,13 +19,13 @@ Research Interests
 My research focuses on:
 
 Retrieval [NAACL'25, ISMB'24]
-- Advancing beyond bi-encoder architectures to enable more targeted information retrieval
-- How retrieval enhances knowledge grounding and factual verification 
-- Developing process-level reward modeling for explainable and verifiable reasoning
+- Novel retrieval architectures beyond bi-encoder to enable more targeted information retrieval
+- Retrieval enhancing knowledge grounding and factual verification 
+- Process-level reward modeling for explainable and verifiable reasoning
 
 Multi-Agent Systems and Tool-Augmented Decision Making
-- Building multi-agentic retrieval-augmented generation frameworks for clinical decision support
-- Leveraging Monte Carlo Tree Search (MCTS) to design optimal agent workflows
+- Agentic retrieval-augmented generation for clinical decision support
+- Monte Carlo Tree Search (MCTS) to design optimal agent workflows
 
 
 Recent Publications
