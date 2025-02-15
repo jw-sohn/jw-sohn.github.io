@@ -34,6 +34,32 @@ Recent Publications
   Minbyul Jeong, **Jiwoong Sohn**, Mujeen Sung, Jaewoo Kang  
   ISMB 2024, Bioinformatics 2024 (Oral and Poster)
 
+- **KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports**  
+  Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
+  AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop
+
+Honors and Awards
+======
+- **Integrated Bachelor's and Master's Scholarship (50% Tuition)** (Sep 2023 - Feb 2025)  
+  Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees
+
+- **Early Completion** (Sep 2023 - Feb 2025)  
+  Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees
+
+- **[ACL 2024 BioNLP Workshop] Shared Task on Clinical Text Generation** (May 2024)  
+  Top Performing Teams
+
+- **[LG Electronics] iPBL Competition** (Feb 2024)  
+  2nd Prize, 5,000 USD (Monetary Award and Prizes)
+
+- **[Biocreative VIII Track 3] Genetic Phenotype Extraction and Normalization** (Sep 2023)  
+  3rd Prize
+
+- **Semester High Honors** (Fall 2020, Fall 2019)
+
+- **SDGs Innovation Arduino-based Technology Competition** (Dec 2020)  
+  2nd Prize
+
 Education
 ======
 - **Korea University** (Sep 2023 - Aug 2025, Early Completion)  
