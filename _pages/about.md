@@ -9,7 +9,9 @@ redirect_from:
 
 I am a Master's student in Computer Science and Engineering at Korea University, advised by [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko). My research interests lie in natural language processing (NLP), with a focus on medical applications, large language models (LLMs), and information retrieval (IR).
 
-Currently, I am a research intern at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en). I am also collaborating with [Yale University's Qingyu Chen's Lab](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en) at Yale on systematic validation of medical retrieval-augmented generation systems.
+Currently, 
+I am a research assistant at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en). 
+I am also a research assistant at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
 
 
 Research Interests
