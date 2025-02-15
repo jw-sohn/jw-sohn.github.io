@@ -28,6 +28,7 @@ Multi-Agent Systems and Tool-Augmented Decision Making
 - Monte Carlo Tree Search (MCTS) to design optimal agent workflows
 
 
+
 Recent Publications
 ======
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
@@ -46,6 +47,8 @@ Recent Publications
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
   AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop
 
+
+
 Preprints
 ======
 - **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
@@ -59,6 +62,8 @@ Preprints
 
 - **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
   Jiwoong Sohn*, Hyungsoon Hwang*, Sihyun Park, Jiwoo Lee, Xiangru Tang, Yanjun Shao, Nikhil Khandekar, Mark Gerstein, Mujeen Sung, Jaewoo Kang  
+
+
 
 Honors and Awards
 ======
@@ -77,6 +82,8 @@ Honors and Awards
 - **SDGs Innovation Arduino-based Technology Competition** (Dec 2020)  
   2nd Prize
 
+
+
 Education
 ======
 - **Korea University** (Sep 2023 - Aug 2025, Early Completion)  
@@ -89,6 +96,8 @@ Education
   B.S. in Health and Environmental Science  
   Minor in Computer Science and Engineering  
   GPA: 4.0/4.5
+
+
 
 Contact
 ======
