@@ -52,16 +52,16 @@ Recent Publications
 Preprints
 ======
 - **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
-  Jiwoong Sohn*, Xiangru Tang*, Yanjun Shao*, Jaewoo Kang, Mark Gerstein
+  Jiwoong Sohn★, Xiangru Tang★, Yanjun Shao★, Jaewoo Kang, Mark Gerstein
 
 - **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
   Hyunjae Kim, Jiwoong Sohn, Qingyu Chen
 
 - **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
-  Yoon Jae Hoon*, Jiwoong Sohn*, Xiangru Tang*, Yanjun Shao*, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
+  Yoon Jae Hoon★, Jiwoong Sohn★, Xiangru Tang★, Yanjun Shao★, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
 
 - **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
-  Jiwoong Sohn*, Hyungsoon Hwang*, Sihyun Park, Jiwoo Lee, Xiangru Tang, Yanjun Shao, Nikhil Khandekar, Mark Gerstein, Mujeen Sung, Jaewoo Kang  
+  Jiwoong Sohn★, Hyungsoon Hwang★, Sihyun Park, Jiwoo Lee, Xiangru Tang, Yanjun Shao, Nikhil Khandekar, Mark Gerstein, Mujeen Sung, Jaewoo Kang  
 
 
 
