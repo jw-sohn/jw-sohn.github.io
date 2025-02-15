@@ -14,11 +14,17 @@ Currently, I am a research intern at [Yale University's Gerstein Lab](https://ww
 
 Research Interests
 ======
-- Medical Natural Language Processing
-- Large Language Models
-- Information Retrieval
-- Reinforcement Learning
-- Multi-Agent Systems
+My research focuses on:
+
+Retrieval [NAACL'25, ISMB'24]
+- Advancing beyond bi-encoder architectures to enable more targeted information retrieval
+- How retrieval enhances knowledge grounding and factual verification 
+- Developing process-level reward modeling for explainable and verifiable reasoning
+
+Multi-Agent Systems and Tool-Augmented Decision Making
+- Building multi-agentic retrieval-augmented generation frameworks for clinical decision support
+- Leveraging Monte Carlo Tree Search (MCTS) to design optimal agent workflows
+
 
 Recent Publications
 ======
