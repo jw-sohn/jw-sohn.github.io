@@ -29,7 +29,7 @@ Multi-Agent Systems and Tool-Augmented Decision Making
 
 
 
-Recent Publications
+Publications &Preprints
 ======
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
@@ -47,10 +47,6 @@ Recent Publications
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
   AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop
 
-
-
-Preprints
-======
 - **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
   Jiwoong Sohn★, Xiangru Tang★, Yanjun Shao★, Jaewoo Kang, Mark Gerstein
 
