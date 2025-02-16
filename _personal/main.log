@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.13)  17 FEB 2025 00:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.13)  17 FEB 2025 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -400,8 +400,7 @@ Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa)
 LaTeX Font Info:    Trying to load font information for T1+bch on input line 161.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
@@ -422,6 +421,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
 LaTeX Font Info:    ... okay on input line 161.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
 LaTeX Font Info:    ... okay on input line 161.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -565,10 +565,10 @@ Package lastpage Warning: Rerun to get the references right on input line 702.
 
  ) 
 Here is how much of TeX's memory you used:
- 15581 strings out of 473200
- 262758 string characters out of 5720278
- 686770 words of memory out of 5000000
- 38603 multiletter control sequences out of 15000+600000
+ 15584 strings out of 473200
+ 262797 string characters out of 5720278
+ 686761 words of memory out of 5000000
+ 38604 multiletter control sequences out of 15000+600000
  598790 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,600b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s

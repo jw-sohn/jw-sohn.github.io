@@ -160,6 +160,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/t1bch.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/t1bch.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/t1bch.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
+INPUT ./main.aux
+INPUT ./main.aux
+INPUT main.aux
 OUTPUT main.aux
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
