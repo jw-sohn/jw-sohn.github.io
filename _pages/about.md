@@ -14,8 +14,6 @@ Currently,
 I am a research assistant at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en). 
 I am also a research assistant at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
 
-<br>
-
 ## Research Interests
 My research focuses on:
 
@@ -27,14 +25,6 @@ Multi-Agent Systems
 - Process-level reward modeling for explainable and verifiable reasoning
 - Agentic retrieval-augmented generation for clinical decision support
 - Monte Carlo Tree Search (MCTS) to design optimal agent workflows
-
-Large Language Models
-- Developed the first 7B parameter open-source medical language model capable of passing the USMLE, runnable on personal computers, bridging 
-
-
-
-
-
 
 
 ## Publications & Preprints
