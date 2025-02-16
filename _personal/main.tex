@@ -1,0 +1,702 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Jiwoong Sohn's CV},
+    pdfauthor={Jiwoong Sohn},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\definecolor{DarkBlue}{RGB}{0,0,139}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=DarkBlue, % color of internal links (like table of contents)
+    citecolor=DarkBlue, % color of citation links
+    urlcolor=DarkBlue, % color of URLs
+    allcolors=DarkBlue % color of all types of links
+}
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 3.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in July 2024}\hspace{\widthof{Last updated in July 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{20 pt}{20 pt}\selectfont Jiwoong (Andy) Sohn
+
+        \vspace{5 pt}
+
+        \normalsize
+        {\faMapMarker}{ 501B, Woojung Hall of Informatics, Korea University, 145 Anam-ro, Seongbuk-gu, Seoul, South Korea}\\
+
+        %{\faMapMarker}{ The Sharp Bojeong Avenue, 11, Sinchon-ro 47beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, South Korea}\\
+        \vspace{-0.1cm}
+        \mbox{\faPhoneSquare}{ (+82)10-2506-3913}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\faEnvelope} {\hrefWithoutArrow{mailto:jw_sohn@korea.ac.kr}{jw\textunderscore sohn@korea.ac.kr}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\faLinkedin} {\hrefWithoutArrow{https://www.linkedin.com/in/jiwoong-sohn/}{in/jiwoong-sohn}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\faGraduationCap} {\hrefWithoutArrow{https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en}{ Google Scholar}}%
+%        \kern 5.0 pt%
+%        \AND%
+%        \kern 5.0 pt%
+%        \mbox{\faGithub} %{\hrefWithoutArrow{https://github.com/ahwatnow}{GitHub}}%
+    \end{header}
+
+    \vspace{5 pt - 0.0 cm}
+
+\section{EDUCATION}
+\vspace{0.1 cm}
+        \begin{twocolentry}{
+        Sep. 2023 - Aug. 2025\\ 
+            \textit{Early Completion}
+        }
+        \textbf{Korea University}\\
+        \textit{Master of Science}
+        
+        \end{twocolentry}
+        
+        \begin{highlights}
+            
+            \item \textit{Major}: Computer Science and Engineering
+            \\
+            \item GPA: 4.44/4.5 (Merit-based Scholarship)
+            \\
+            \item Advisor: \href{https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko}{Jaewoo Kang}
+             \\
+        \end{highlights}
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{
+            Mar. 2016 - Aug. 2023
+        }
+            \textbf{Korea University}\\\textit{Bachelor of Science, Bachelor of Engineering}
+        \end{twocolentry}
+
+        \begin{highlights}
+            
+            \item \textit{Double Major}: Health and Environmental Science, Artificial Intelligence
+             \\
+            \item \textit{Minor}: Computer Science and Engineering
+            \item GPA: 4.0/4.5
+             \\
+        \end{highlights}
+    \vspace{0.05 cm}
+
+\section{PUBLICATIONS}
+\vspace{0.1 cm}
+       \begin{twocolentry}
+            {
+                Feb. 2025
+            }
+            {
+                \textbf{MedAgentsArena: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{Xiangru Tang}, \mbox{Daniel Shao}, \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Jiapeng Chen}, \mbox{Jiayi Zhang}, \mbox{Jinyu Xiang}, \\
+                \mbox{Fang Wu}, \mbox{Yilun Zhao}, \mbox{Chenglin Wu}, \mbox{Wenqi Shi}, \mbox{Arman Cohan}, \mbox{Mark Gerstein} \\
+                \textit{Under Review at ACL 2025}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+       \begin{twocolentry}
+            {
+                Aug. 2024
+            }
+            {
+                \textbf{Rationale-Guided Retrieval Augmented Generation for Medical Question Answering}
+            }         
+        \end{twocolentry}            
+        \begin{onecolentry}
+                \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Yein Park},
+                \mbox{Chanwoong Yoon}, \mbox{Sihyun Park},
+                \mbox{Mujeen Sung}, \mbox{Hyunjae Kim}, \mbox{Jaewoo Kang} \\
+        \href{https://arxiv.org/abs/2411.00300} {{NAACL 2025}}   
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+       \begin{twocolentry}
+            {
+                Mar. 2024
+            }
+            {
+                \textbf{Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks}
+            } 
+        \end{twocolentry}            
+        \begin{onecolentry}
+                \mbox{Hyunjae Kim}, \mbox{Hyeon Hwang},
+                \mbox{Jiwoo Lee}, \mbox{Sihyeon Park},
+                \mbox{Dain Kim}, \mbox{Taewhoo Lee},
+                \mbox{Chanwoong Yoon}, \\
+                \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Donghee Cho}, \mbox{Jaewoo Kang} \\
+        \href{https://arxiv.org/abs/2404.00376} {{arXiv:2404.00376 (2024)} } \textit{- Under Review at NPJ Digital Medicine}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+    
+       \begin{twocolentry}
+            {
+                Jan. 2024
+            }
+            {
+                \textbf{Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{Minbyul Jeong},
+                \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Mujeen Sung}, \mbox{Jaewoo Kang} \\
+        \href{https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892} {{ISMB 2024, Bioinformatics 2024}} 
+        (Oral and \textbf{Poster})
+    \end{onecolentry}
+    \vspace{0.2 cm}
+    
+       \begin{twocolentry}
+            {
+                Nov. 2023
+            }
+            {
+                \textbf{KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports}
+            }
+    \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{Hajung Kim},
+                \mbox{Chanhwi Kim},
+                \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Tim Beck}, 
+                \mbox{Marek Rei},
+                \mbox{Sunkyu Kim},
+                \mbox{T. Ian Simpson}, \\
+                \mbox{Joram M. Posma},
+                \mbox{Antoine Lain},
+                \mbox{Mujeen Sung},
+                \mbox{Jaewoo Kang}
+                \\
+        \href{https://spiral.imperial.ac.uk/handle/10044/1/108095}{AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop}
+    \end{onecolentry}
+    \vspace{0.2 cm}
+
+\section{MANUSCRIPTS IN PREPARATION}
+\vspace{0.1 cm}
+       \begin{twocolentry}
+            {
+                2025
+            }
+            {
+                \textbf{Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{\textbf{\underline{Jiwoong Sohn†}}}, \mbox{Xiangru Tang†}, \mbox{Yanjun Shao†}, \mbox{Hyungsoon Hwang†}, \mbox{Nikhil Khandekar}, \mbox{Sihyun Park}, \\
+                \mbox{Jiwoo Lee}, \mbox{Mark Gerstein}, \mbox{Mujeen Sung}, \mbox{Jaewoo Kang}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+       \begin{twocolentry}
+            {
+                2025
+            }
+            {
+                \textbf{Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{\textbf{\underline{Jiwoong Sohn†}}}, \mbox{Xiangru Tang†}, \mbox{Yanjun Shao}, \mbox{Jaewoo Kang}, \mbox{Mark Gerstein}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+       \begin{twocolentry}
+            {
+                2025
+            }
+            {
+                \textbf{A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{Hyunjae Kim}, \mbox{\textbf{\underline{Jiwoong Sohn}}}, \mbox{Qingyu Chen}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+       \begin{twocolentry}
+            {
+                2025
+            }
+            {
+                \textbf{MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning}
+            }
+        \end{twocolentry}           
+        \begin{onecolentry}
+                \mbox{Yoon Jae Hoon†}, \mbox{\textbf{\underline{Jiwoong Sohn†}}}, \mbox{Xiangru Tang}, \mbox{Yanjun Shao}, \mbox{Hyunjae Kim}, \mbox{Mark Gerstein}, \mbox{Jaewoo Kang}
+        \end{onecolentry}
+    \vspace{0.2 cm}
+
+    
+\section{RESEARCH EXPERIENCE}
+\vspace{0.1 cm}
+        \begin{twocolentry}{
+            Aug. 2024 - Present\\ 
+        }
+        \textbf{Yale University | Gerstein Lab} \href{https://www.gersteinlab.org/}{\faExternalLink*}\\
+        \textit{Research Intern} (Advisor: \href{https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en}{Mark Gerstein}, Mentor: \href{https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en}{Xiangru Tang})
+        
+        \end{twocolentry}
+    \vspace{0.1 cm}
+\begin{highlights}
+    \item \textbf{Medical Multi-Agent System for Clinical Decision Support}
+        \vspace{-0.1 cm}
+    \begin{highlights}
+        \item Developed a multi-agent system for precise clinical decision making, integrating collaborative agent protocols with retrieval-augmented generation.
+        \item Optimizing medical knowledge synthesis through dynamic agent interactions, combining Large Language Model's parametric knowledge with dense vector retrieval from PubMed and clinical databases.
+        \item Two manuscript in preparation for submission to \textit{Nature Medicine} and \textit{ACL 2025}.
+
+    \end{highlights}
+
+%    \item \textbf{Benchmarking Clinical Prompt Optimizers}
+%    \vspace{-0.1 cm}
+%    \begin{highlights}
+%        \item Conducting comparative analysis between clinician-%authored and DSPy-generated prompts across medical applications %(QA, retrieval, EHR-to-SQL, summarization) to optimize prompt %engineering
+%\end{highlights}
+%
+%    \item \textbf{Web Agent for Accurate Medical Calculations}
+%    \vspace{-0.1 cm}
+%    \begin{highlights}
+%        \item Developing a web agent autonomously navigating medical calculators for accurate clinical computations
+%    \end{highlights}
+\end{highlights}
+
+\vspace{0.1 cm}
+        \begin{twocolentry}{
+            Dec. 2024 - Present\\ 
+        }
+        \textbf{Yale University | Qingyu Chen's Lab} \href{https://sites.google.com/view/qingyuchen/home/}{\faExternalLink*}\\
+        \textit{Research Assistant} (Advisor: \href{https://scholar.google.com/citations?user=FSLotiMAAAAJ&hl=en}{Qingyu Chen}, Mentor: \href{https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=ko}{Hyunjae Kim})
+        
+        \end{twocolentry}
+    \vspace{0.1 cm}
+\begin{highlights}
+    \item \textbf{Systematic Validation of Medical Retrieval-Augmented Generation System}
+    \vspace{-0.1 cm}
+    \begin{highlights}
+        \item Designing a comprehensive evaluation pipeline for RAG systems in clinical settings with fine-grained metrics across evidence retrieval, attribution, and response validation to assess factuality, completeness, and accuracy.
+        \item Conducteing evaluation with human medical experts and  large language models (LLMs), generating publicly available annotations to benchmark evidence reliability and model performance.
+    \end{highlights}
+
+\end{highlights}
+
+\vspace{0.15 cm}      
+\begin{twocolentry}{
+            Sep. 2023 - Present\\ 
+}
+\textbf{Korea University | Data Mining and Information Systems Laboratory} \href{https://dmis.korea.ac.kr/home}{\faExternalLink*}\\
+\textit{Research Assistant} (Advisor: \href{https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko}{Jaewoo Kang})
+        \end{twocolentry}
+\vspace{0.1 cm}
+\begin{highlights}
+    \item \textbf{Open-Source Medical Foundation Model}
+    \vspace{-0.1 cm}
+    \begin{highlights}
+        \item Developed the first open-source medical foundation model in 7B parameters capable of passing the USMLE.
+    \item Employed the Unstructured library to extract and chunk text data from medical textbooks for fine-tuning.
+\end{highlights}
+    \item \textbf{Retrieval-Augmented Language Model with Self-Reflection for Enhanced Medical Reasoning}
+\vspace{-0.1 cm}
+    \begin{highlights}
+\item Instruction-tuned LLaMA2 to self-reflect on its generation while effectively utilizing retrieved documents, achieving state-of-the-art performance on medical QA benchmarks.
+\item Utilized an off-the-shelf dense retriever, MedCPT, to index a large-scale medical text corpus.
+    \end{highlights}
+
+    \item \textbf{Rationale-Guided Retrieval Augmentation Framework}
+    \vspace{-0.1 cm}
+\begin{highlights}
+    \item Designed a comprehensive retrieval system using rationale-guided approaches for query reformulation during pre-retrieval, balanced corpus sampling, and post-retrieval validation.
+    \item Developed a neural filtering model using perplexity-derived pseudo-labels for optimized retrieval from diverse medical knowledge bases.
+\end{highlights}
+\end{highlights}
+
+         \vspace{0.15 cm}       
+        \begin{twocolentry}{
+            Mar. 2023 - Aug. 2023\\ 
+        }
+        \textbf{Korea University | Data Mining and Information Systems Laboratory} \\
+        \textit{Research Intern} (Advisor: \href{https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko}{Jaewoo Kang})
+        \end{twocolentry}
+        \vspace{0.1 cm}
+\begin{highlights}
+    \item \textbf{BioCreative8 Track 3: Phenotype Named Entity Recognition and Normalization}
+    \vspace{-0.1 cm}
+    \begin{highlights}
+    \item Conducted error analysis on named entity recognition (NER) and entity linking (EL) methods, improving F1 score by 2.6\% over the challenge average.
+    \item Implemented data augmentation techniques, including synonym marginalization, to enhance entity normalization accuracy and strengthen consistency in mapping to Human Phenotype Ontology (HPO) terms.
+    \end{highlights}
+\end{highlights}
+            \vspace{0.05 cm}
+\section{HONORS AND AWARDS}
+            \vspace{0.05 cm}
+        \begin{twocolentry}
+        {
+            Sep. 2023 - Feb. 2025
+        }
+        {
+        \textbf{Integrated Bachelor's and Master's Scholarship (50\% Tuition)}\\
+        \textit{– Awarded based on GPA of 4.0 or above in both Bachelor’s and Master’s degrees
+}
+        }
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            Sep. 2023 - Feb. 2025
+        }
+        {
+        \textbf{Early Completion} \\
+        \textit{– Awarded based on GPA of 4.0 or above in both Bachelor’s and Master’s degrees
+}
+        }
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            May 2024
+        }
+        {}
+        \href{https://stanford-aimi.github.io/discharge-me/}{\textbf{[ACL 2024 BioNLP Workshop]}} \textbf{Shared Task on Clinical Text generation} \\
+        \textit{– Top Performing Teams}
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            Feb. 2024
+        }
+        {}
+        \textbf{[LG Electronics] iPBL Competition} \\
+        \textit{– 2nd Prize, 5,000 USD (Monetary Award and Prizes)}
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            Sep. 2023
+        }
+        {{\href{https://biocreative.bioinformatics.udel.edu/events/biocreative-viii/biocreative-viii-challenge/}{\textbf{[Biocreative VIII Track 3]}} \textbf{Genetic Phenotype Extraction and Normalization from Dysmorphology Physical Examination Entries} \\
+        \textit{– 3rd Prize}
+        }
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            Fall 2020, Fall 2019
+        }
+        {
+        \textbf{Semester High Honors} \\
+        }
+        \end{twocolentry}
+
+    \vspace{0.1 cm}
+        \begin{twocolentry}
+        {
+            Dec. 2020
+        }
+        {
+        \textbf{SDGs Innovation Arduino-based Technology Competition } \\
+        \textit{– 2nd Prize}}
+        \end{twocolentry}
+    \vspace{0.05 cm}
+\section{TEACHING EXPERIENCE}
+        \begin{twocolentry}{
+            Spring 2024\\ 
+        }
+        \textbf{SW Programming Basics (GECT002)} \\
+        \textit{Teaching Assistant}
+        \end{twocolentry}
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{
+            Fall 2023\\ 
+        }
+        \textbf{Machine Learning (COSE362)} \\
+        \textit{Teaching Assistant}
+        \end{twocolentry}
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{
+            Fall 2023\\ 
+        }
+        \textbf{Advanced Data Science for Finance (DFE620)} \\
+        \textit{Teaching Assistant}
+        \end{twocolentry}
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{
+            Fall 2020\\ 
+        }
+        \textbf{Python Programming for Everybody (COSE156)} \\
+        \textit{Teaching Assistant}
+        \end{twocolentry}
+        \vspace{0.1 cm}
+        
+        \begin{twocolentry}{
+            2016 - 2023\\
+        }
+        \textbf{Private Academies and Tutoring} \\
+        \textit{Physics and Math Instructor}
+        \end{twocolentry}
+    \vspace{0.1 cm}
+
+
+\section{TECHNICAL SKILLS}
+        \begin{onecolentry}
+        \textbf{Programming}: Python, C, Matlab, Verilog \\ 
+        \vspace{0.05 cm}
+        \textbf{Toolkits}: PyTorch, Hugging Face, LangChain, Scikit-Learn, NumPy, Pandas, Faiss, Milvus \\ 
+        \vspace{0.05cm}
+        \textbf{Other}: \LaTeX, Blender, Arduino \\
+        \vspace{0.05cm}
+        \textbf{Certificates}:
+        \vspace{-0.1 cm}
+            \begin{highlights}
+                \item Certification of Advanced Data Analytics Semi-Professional (2022)
+                \vspace{-0.1 cm}
+                \item AI Certificate for Everyone (AICE) - Associate (2022)
+            \end{highlights}
+        \end{onecolentry}
+            \vspace{0.1 cm}
+\section{LEADERSHIP AND EXTRACURRICULAR ACTIVITIES}
+        \begin{twocolentry}{
+             Aug. 2022 - Dec. 2023\\ 
+        }
+        \textbf{Korea University | Buddy Assistants (KUBA)}\\
+        \textit{Group Leader}
+                \begin{highlights}
+    \item Led and organized volunteer activities for over 300 international exchange students, demonstrating strong leadership and cross-cultural communication skills to support their adaptation to Korea University life.
+    \item Coordinated International Student Festival booths (France, Japan, Thailand), securing consecutive 1st place wins
+        \end{highlights}
+        \end{twocolentry}
+
+         \vspace{0.05 cm}  
+
+        \begin{twocolentry}{
+             Jul. 2022 - Jan. 2023\\ 
+        }
+        \textbf{KT | AIVLE School AI Developer Track}
+        \begin{highlights}
+    \item Engineered an audio-to-3D dance generation platform using a transformer model and Blender as a capstone project for KT's selective AI Developer Program.
+\end{highlights}
+        \end{twocolentry}
+         \vspace{0.05 cm}  
+
+        \begin{twocolentry}{
+             Jul. 2020 - Jan. 2021\\ 
+        }
+        \textbf{Korea University | Korea University Rowing Team}
+\begin{highlights}
+    \item Collaborated closely with team rowers, participated in rigorous training sessions to build team cohesion and endurance.
+\end{highlights}
+        \end{twocolentry}
+         \vspace{0.05 cm}  
+
+        \begin{twocolentry}{
+            Mar. 2019 - Dec. 2019\\ 
+        }
+        \textbf{Korea University | Disease Study Society}\\
+\textit{Treasurer, Academic Member}
+\begin{highlights}
+    \item Led weekly disease research seminars and managed society finances, including budget planning and transparent fund allocation for academic events
+\end{highlights}
+        \end{twocolentry}
+         \vspace{0.05 cm}
+        \begin{twocolentry}{
+            Apr. 2017 - Apr. 2019\\ 
+        }
+        \textbf{Republic of Korea Air Force | Compulsory Military Service}\\
+        \end{twocolentry}
+        \textit{Honorary Discharge as Staff Sergeant}
+    \begin{highlights}
+    \item Served in Gyeryongdae (Joint Forces Command HQ) Support Group
+    \item Took a leave of absence from the Bachelor's Program to fulfill military service duties.
+    \end{highlights}
+            \vspace{0.1 cm}
+
+    \section{ACADEMIC SERVICE}
+        \vspace{0.03 cm}
+    
+        \begin{onecolentry}
+            \textbf{EMNLP 2024} \\
+            \textit{Secondary Reviewer}
+        \end{onecolentry}
+            \vspace{0.05 cm}
+            
+\section{LANGUAGE}
+    
+        \begin{onecolentry}
+        \textbf{Korean} (Native)  
+        \end{onecolentry}
+         \vspace{0.03 cm}
+        \begin{onecolentry}
+        \textbf{English} (C2) \\
+            \begin{highlights}
+                \item TOEFL: 111 (MyBest Scores: 115)
+                \item TOEIC: 970
+                \item TOEIC Speaking: 200
+            \end{highlights}
+        \end{onecolentry}
+         \vspace{0.03 cm}
+        \begin{onecolentry}{}
+        \textbf{German} (A1) \\
+        \end{onecolentry}
+
+\end{document}

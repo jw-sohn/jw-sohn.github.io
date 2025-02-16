@@ -59,7 +59,7 @@ Large Language Models
   Manuscript in Preparation
 
 - **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
-  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao, Jaewoo Kang, Mark Gerstein
+  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Jaewoo Kang, Mark Gerstein
   Manuscript in Preparation
 
 - **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
