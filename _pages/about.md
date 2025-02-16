@@ -49,15 +49,15 @@ Multi-Agent Systems
   Manuscript in Preparation
 
 - **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
-  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Jaewoo Kang, Mark Gerstein
+  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Jaewoo Kang, Mark Gerstein  
   Manuscript in Preparation
 
 - **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
-  Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen
+  Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen  
   Manuscript in Preparation
 
 - **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
-  Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang
+  Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
   Manuscript in Preparation
 
 
