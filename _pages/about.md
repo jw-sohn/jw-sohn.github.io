@@ -29,7 +29,7 @@ Multi-Agent Systems and Tool-Augmented Decision Making
 
 
 
-Publications &Preprints
+Publications & Preprints
 ======
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
