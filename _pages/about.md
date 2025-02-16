@@ -51,7 +51,7 @@ Publications & Preprints
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao, Jaewoo Kang, Mark Gerstein
 
 - **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
-  Hyunjae Kim†, **Jiwoong Sohn†**, Qingyu Chen
+  Hyunjae Kim†, **Jiwoong Sohn**, Qingyu Chen
 
 - **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
   Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
