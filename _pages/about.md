@@ -34,7 +34,7 @@ Publications & Preprints
 ======
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
-  NAACL 2025 (Main)
+  **NAACL 2025**
 
 - **Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks**  
   Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Choi, Jaewoo Kang  
@@ -42,23 +42,27 @@ Publications & Preprints
 
 - **Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models**  
   Minbyul Jeong, **Jiwoong Sohn**, Mujeen Sung, Jaewoo Kang  
-  ISMB 2024, Bioinformatics 2024 (Oral and Poster)
+  **ISMB 2024 (Oral and Poster)**, **Bioinformatics 2024** 
 
 - **KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports**  
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
-  AMIA 2023, Proceedings of the BioCreative VIII Challenge and Workshop
-
-- **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
-  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao, Jaewoo Kang, Mark Gerstein
-
-- **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
-  Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen
-
-- **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
-  Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
+  **AMIA 2023**, Proceedings of the BioCreative VIII Challenge and Workshop
 
 - **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Hyungsoon Hwang†, Nikhil Khandekar, Sihyun Park, Jiwoo Lee,  Mark Gerstein, Mujeen Sung, Jaewoo Kang  
+  Manuscript in Preparation
+
+- **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
+  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao, Jaewoo Kang, Mark Gerstein
+  Manuscript in Preparation
+
+- **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
+  Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen
+  Manuscript in Preparation
+
+- **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
+  Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang
+  Manuscript in Preparation
 
 
 
