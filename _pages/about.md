@@ -19,16 +19,16 @@ Research Interests
 ======
 My research focuses on:
 
-Retrieval [NAACL'25, ISMB'24]
+Information Retrieval [NAACL'25, ISMB'24]
 - Novel retrieval architectures beyond bi-encoder to enable more targeted information retrieval
 - Retrieval enhancing knowledge grounding and factual verification 
-- Process-level reward modeling for explainable and verifiable reasoning
 
-Multi-Agent Systems and Tool-Augmented Decision Making
+Multi-Agent Systems
+- Process-level reward modeling for explainable and verifiable reasoning
 - Agentic retrieval-augmented generation for clinical decision support
 - Monte Carlo Tree Search (MCTS) to design optimal agent workflows
 
-
+<br><br>
 
 Publications & Preprints
 ======
@@ -63,7 +63,6 @@ Publications & Preprints
 - **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
   Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang
   Manuscript in Preparation
-
 
 
 Honors and Awards
