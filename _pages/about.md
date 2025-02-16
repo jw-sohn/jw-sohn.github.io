@@ -69,14 +69,14 @@ Multi-Agent Systems
   Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees
 - **Early Completion** (Sep 2023 - Feb 2025)  
   Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees
-- **[ACL 2024 BioNLP Workshop] Shared Task on Clinical Text Generation** (May 2024)  
+- **[ACL 2024 BioNLP Workshop](https://aclweb.org/aclwiki/BioNLP_Workshop) Shared Task on Clinical Text Generation** (May 2024)   
   Top Performing Teams
-- **[LG Electronics] iPBL Competition** (Feb 2024)  
+- **[LG Electronics iPBL Competition](https://eng.korea.ac.kr/square/news_view.html?no=1044&page=1&key=)** (Feb 2024)  
   2nd Prize, 5,000 USD (Monetary Award and Prizes)
-- **[Biocreative VIII Track 3] Genetic Phenotype Extraction and Normalization** (Sep 2023)  
+- **[Biocreative VIII Track 3](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-viii/track-3/) Genetic Phenotype Extraction and Normalization** (Sep 2023)  
   3rd Prize
 - **Semester High Honors** (Fall 2020, Fall 2019)
-  Awarded based on GPA of 4.0 or above
+  Awarded for academic excellence
 - **SDGs Innovation Arduino-based Technology Competition** (Dec 2020)  
   2nd Prize
 
