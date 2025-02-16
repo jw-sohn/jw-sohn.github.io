@@ -8,4 +8,4 @@ date: 2016-01-01
 location: "South Korea"
 ---
 
-I have been working as a private tutor and instructor at various private academies since 2016, teaching mathematics, physics, and chemistry. Through personalized instruction and mentoring, I help students develop strong foundations in STEM subjects and achieve their academic goals. My teaching experience spans from high school to university level coursework, with a focus on helping students master complex scientific concepts and problem-solving skills.
+I have extensive experience as a private tutor and instructor at multiple academies since 2016. My teaching focuses on STEM subjects including mathematics, physics, and chemistry at both high school and college preparatory levels. Through individualized instruction and mentoring, I help students build strong conceptual foundations while developing problem-solving skills. I also provide guidance on university admissions, helping students prepare competitive applications for top engineering and science programs.
