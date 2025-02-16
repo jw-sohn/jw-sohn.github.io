@@ -22,7 +22,7 @@ repository               : "jw-sohn/jw-sohn.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_1.jpg"
+  avatar           : "profile_3.png"
   name             : "Jiwoong Sohn"
   pronouns         : "he/him"  
   bio              : "natural language processing (NLP)     large language models (LLM)    and information retrieval (IR)."
