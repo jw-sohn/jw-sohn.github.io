@@ -15,8 +15,7 @@ I am a research assistant at [Yale University's Gerstein Lab](https://www.gerste
 I am also a research assistant at [Yale University's Gerstein Lab](https://www.gersteinlab.org/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
 
 
-Research Interests
-======
+## Research Interests
 My research focuses on:
 
 Information Retrieval [NAACL'25, ISMB'24]
@@ -30,8 +29,7 @@ Multi-Agent Systems
 
 <br><br>
 
-Publications & Preprints
-======
+## Publications & Preprints
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
   **NAACL 2025**
@@ -65,8 +63,7 @@ Publications & Preprints
   Manuscript in Preparation
 
 
-Honors and Awards
-======
+## Honors and Awards
 - **Integrated Bachelor's and Master's Scholarship (50% Tuition)** (Sep 2023 - Feb 2025)  
   Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees
 - **Early Completion** (Sep 2023 - Feb 2025)  
@@ -84,8 +81,7 @@ Honors and Awards
 
 
 
-Education
-======
+## Education
 - **Korea University** (Sep 2023 - Aug 2025, Early Completion)  
   M.S. in Computer Science and Engineering  
   GPA: 4.44/4.5 (Merit-based Scholarship)  
@@ -98,9 +94,8 @@ Education
   GPA: 4.0/4.5
 
 
-
-Contact
-======
+  
+## Contact
 - Email: jw_sohn@korea.ac.kr
 - Office: 501B, Woojung Hall of Informatics, Korea University
 - Address: 145 Anam-ro, Seongbuk-gu, Seoul, South Korea
