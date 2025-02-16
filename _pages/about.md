@@ -20,13 +20,20 @@ I am also a research assistant at [Yale University's Gerstein Lab](https://www.g
 My research focuses on:
 
 Information Retrieval [NAACL'25, ISMB'24]
-- Novel retrieval architectures beyond bi-encoder to enable more targeted information retrieval
+- Novel architectures beyond bi-encoders for targeted retrieval, with a focus on late interaction
 - Retrieval enhancing knowledge grounding and factual verification 
 
 Multi-Agent Systems
 - Process-level reward modeling for explainable and verifiable reasoning
 - Agentic retrieval-augmented generation for clinical decision support
 - Monte Carlo Tree Search (MCTS) to design optimal agent workflows
+
+Large Language Models
+- Developed the first 7B parameter open-source medical language model capable of passing the USMLE, runnable on personal computers, bridging 
+
+
+
+
 
 
 
