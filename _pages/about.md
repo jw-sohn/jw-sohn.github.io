@@ -36,7 +36,7 @@ Publications & Preprints
   NAACL 2025 (Main)
 
 - **Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks**  
-  Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Cho, Jaewoo Kang  
+  Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Choi, Jaewoo Kang  
   Under Review at NPJ Digital Medicine
 
 - **Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models**  
@@ -51,13 +51,13 @@ Publications & Preprints
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao, Jaewoo Kang, Mark Gerstein
 
 - **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
-  Hyunjae Kim†, **Jiwoong Sohn**, Qingyu Chen
+  Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen
 
 - **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
   Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
 
 - **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
-  **Jiwoong Sohn†**, Hyungsoon Hwang†, Sihyun Park, Jiwoo Lee, Xiangru Tang, Yanjun Shao, Nikhil Khandekar, Mark Gerstein, Mujeen Sung, Jaewoo Kang  
+  **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Hyungsoon Hwang†, Nikhil Khandekar, Sihyun Park, Jiwoo Lee,  Mark Gerstein, Mujeen Sung, Jaewoo Kang  
 
 
 
