@@ -40,7 +40,7 @@ Multi-Agent Systems
 
 - **Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models**  
   Minbyul Jeong, **Jiwoong Sohn**, Mujeen Sung, Jaewoo Kang  
-  **[ISMB 2024, Bioinformatics 2024](https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892)** (Oral and Poster)
+  **[ISMB 2024](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10253333/) (Oral and Poster)**, **[Bioinformatics 2024](https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892)** 
 
 - **KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports**  
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
