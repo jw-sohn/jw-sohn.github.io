@@ -30,19 +30,19 @@ Multi-Agent Systems
 ## Publications & Preprints
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
-  **NAACL 2025**
+  **[NAACL 2025](https://arxiv.org/abs/2411.00300)**
 
 - **Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks**  
   Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Choi, Jaewoo Kang  
-  Under Review at NPJ Digital Medicine
+  [arXiv:2404.00376](https://arxiv.org/abs/2404.00376) - Under Review at NPJ Digital Medicine
 
 - **Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models**  
   Minbyul Jeong, **Jiwoong Sohn**, Mujeen Sung, Jaewoo Kang  
-  **ISMB 2024 (Oral and Poster)**, **Bioinformatics 2024** 
+  **[ISMB 2024, Bioinformatics 2024](https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892)** (Oral and Poster)
 
 - **KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports**  
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
-  **AMIA 2023**, Proceedings of the BioCreative VIII Challenge and Workshop
+  **[AMIA 2023](https://spiral.imperial.ac.uk/handle/10044/1/108095)**, Proceedings of the BioCreative VIII Challenge and Workshop
 
 - **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Hyungsoon Hwang†, Nikhil Khandekar, Sihyun Park, Jiwoo Lee,  Mark Gerstein, Mujeen Sung, Jaewoo Kang  
