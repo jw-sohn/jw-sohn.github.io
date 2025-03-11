@@ -31,8 +31,8 @@ Multi-Agent Systems
 
 
 ## Publications & Preprints
-- **MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning**
-  Xiangru Tang†, Daniel Shao†, **Jiwoong Sohn†**, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein
+- **MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning**  
+  Xiangru Tang†, Daniel Shao†, **Jiwoong Sohn†**, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein  
   **[arXiv:2503.07459](https://arxiv.org/pdf/2503.07459)** - Under Review
 
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
