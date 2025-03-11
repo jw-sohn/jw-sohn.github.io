@@ -31,6 +31,10 @@ Multi-Agent Systems
 
 
 ## Publications & Preprints
+- **MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning**  
+  Xiangru Tang†, Daniel Shao†, **Jiwoong Sohn†**, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein
+  **[Under Review](https://arxiv.org/pdf/2503.07459)**
+
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
   **[NAACL 2025](https://arxiv.org/abs/2411.00300)**
