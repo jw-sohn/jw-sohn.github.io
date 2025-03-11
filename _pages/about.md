@@ -37,7 +37,7 @@ Multi-Agent Systems
 
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
-  **[NAACL 2025](https://arxiv.org/abs/2411.00300)**
+  **[NAACL 2025](https://arxiv.org/abs/2411.00300) (Oral) **
 
 - **Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks**  
   Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Choi, Jaewoo Kang  
