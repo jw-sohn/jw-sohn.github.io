@@ -31,17 +31,17 @@ Multi-Agent Systems
 
 
 ## Publications & Preprints
-- **MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning**  
+- **MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning**
   Xiangru Tang†, Daniel Shao†, **Jiwoong Sohn†**, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein
   **[arXiv:2503.07459](https://arxiv.org/pdf/2503.07459)** - Under Review
 
 - **Rationale-Guided Retrieval Augmented Generation for Medical Question Answering**  
   **Jiwoong Sohn**, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang  
-  **[NAACL 2025](https://arxiv.org/abs/2411.00300) (Oral) **
+  **[NAACL 2025](https://arxiv.org/abs/2411.00300) (Oral)**
 
 - **Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks**  
   Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, **Jiwoong Sohn**, Donghee Choi, Jaewoo Kang  
-  [arXiv:2404.00376](https://arxiv.org/abs/2404.00376) - Under Review
+  **[arXiv:2404.00376](https://arxiv.org/abs/2404.00376)** - Under Review
 
 - **Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models**  
   Minbyul Jeong, **Jiwoong Sohn**, Mujeen Sung, Jaewoo Kang  
