@@ -87,7 +87,7 @@ Multi-Agent Systems
 
 
 ## Education
-- **Korea University** (Sep 2023 - Aug 2025, Early Completion)  
+- **Korea University** (Sep 2023 - Feb 2025, Early Completion)  
   M.S. in Computer Science and Engineering  
   GPA: 4.44/4.5 (Merit-based Scholarship)  
   Advisor: [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko)
