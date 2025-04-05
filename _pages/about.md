@@ -14,7 +14,7 @@ Previously, I completed my Master's degree in Computer Science and Engineering a
 
 I collaborate with Yale University's [Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en).
 
-I also collaborate with Yale University's [Qingyu Chen's Lab](https://sites.google.com/view/qingyuchen/home/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
+I also collaborate with Yale University's [Qingyu Chen's Lab](https://sites.google.com/view/qingyuchen/home/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Dr. Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
 
 You can find my CV [here](https://drive.google.com/file/d/1ylIhycQhHHcpu64H05w4wYu58qo3JjST/view?usp=sharing).
 
