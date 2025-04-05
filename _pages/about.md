@@ -22,13 +22,14 @@ You can find my CV [here](https://drive.google.com/file/d/1ylIhycQhHHcpu64H05w4w
 My research focuses on:
 
 Information Retrieval [NAACL'25, ISMB'24]
-- Novel architectures beyond bi-encoders for targeted retrieval, with a focus on late interaction
-- Retrieval enhancing knowledge grounding and factual verification 
+- Novel dense retrieval architectures
+- Knowledge grounding
+- Factual verification 
 
 Multi-Agent Systems
-- Process-level reward modeling for explainable and verifiable reasoning
-- Agentic retrieval-augmented generation for clinical decision support
-- Monte Carlo Tree Search (MCTS) to design optimal agent workflows
+- Process-level reward modeling
+- Agentic retrieval-augmented generation
+- Optimization of agent workflows
 
 
 ## Publications & Preprints
