@@ -8,12 +8,11 @@ redirect_from:
 ---
 Hello! Welcome to my page 👋
 
-I am a Master's student in Computer Science and Engineering at Korea University, advised by [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko). My research interests lie in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and agents.
+I am an incoming PhD student at ETH Zurich (starting May 1st) and a Master's student in Computer Science and Engineering at Korea University, advised by [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko). My research interests lie in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and agents.
 
-Currently, 
-I am a research assistant at Yale University's [Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en).
+I collaborate with Yale University's [Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en).
 
-I am also a research assistant at Yale University's [Qingyu Chen's Lab](https://sites.google.com/view/qingyuchen/home/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
+I also collaborate with Yale University's [Qingyu Chen's Lab](https://sites.google.com/view/qingyuchen/home/), working on systematic validation of medical retrieval-augmented generation systems under the guidance of [Prof. Qingyu Chen](https://sites.google.com/view/qingyuchen/home/) and [Hyunjae Kim](https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en).
 
 You can find my CV [here](https://drive.google.com/file/d/1ylIhycQhHHcpu64H05w4wYu58qo3JjST/view?usp=sharing).
 
