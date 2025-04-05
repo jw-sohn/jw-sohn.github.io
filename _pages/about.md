@@ -95,7 +95,7 @@ Multi-Agent Systems
   Advisor: [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko)
 
 - **Korea University** (Mar 2016 - Aug 2023)
-  B.E. in Artificial Intelligence
+  B.E. in Artificial Intelligence  
   B.S. in Health and Environmental Science  
   Minor in Computer Science and Engineering  
   GPA: 4.0/4.5
