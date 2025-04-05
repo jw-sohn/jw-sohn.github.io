@@ -52,19 +52,19 @@ Multi-Agent Systems
   Hajung Kim, Chanhwi Kim, **Jiwoong Sohn**, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang  
   **[AMIA 2023](https://spiral.imperial.ac.uk/handle/10044/1/108095)**, Proceedings of the BioCreative VIII Challenge and Workshop
 
-- **Shepherd: Optimizing Medical Multi-Agent Systems via Monte Carlo Tree Search**  
+- **Multi-Agent Systems Optimization**  
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Hyungsoon Hwang†, Nikhil Khandekar, Sihyun Park, Jiwoo Lee,  Mark Gerstein, Mujeen Sung, Jaewoo Kang  
   Manuscript in Preparation
 
-- **Medical Agentic RAG: A Multi-Agent Framework for Clinical Decision Support**  
+- **Medical Agentic RAG**  
   **Jiwoong Sohn†**, Xiangru Tang†, Yanjun Shao†, Jaewoo Kang, Mark Gerstein  
   Manuscript in Preparation
 
-- **A Systematic Validation Framework for Medical Retrieval-Augmented Generation Systems**  
+- **Medical Retrieval-Augmented Generation Verification**  
   Hyunjae Kim, **Jiwoong Sohn**, Qingyu Chen  
   Manuscript in Preparation
 
-- **MCTS-Guided Factual Verification for Process-Level Reward Modeling in Medical Reasoning**  
+- **Process-Level Reward Modeling**  
   Yoon Jae Hoon†, **Jiwoong Sohn†**, Xiangru Tang, Yanjun Shao, Hyunjae Kim, Mark Gerstein, Jaewoo Kang  
   Manuscript in Preparation
 
