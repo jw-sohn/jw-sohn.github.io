@@ -8,9 +8,7 @@ redirect_from:
 ---
 Hello! Welcome to my page 👋
 
-I am an incoming PhD student at ETH Zurich (starting May 1st). 
-
-Previously, I completed my Master's degree in Computer Science and Engineering at Korea University in February, where I was advised by [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko) at the [DMIS Lab](https://dmis.korea.ac.kr). My research interests lie in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and agents.
+I completed my Master's degree in Computer Science and Engineering at Korea University in February, where I was advised by [Prof. Jaewoo Kang](https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko) at the [DMIS Lab](https://dmis.korea.ac.kr). My research interests lie in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and agents.
 
 I collaborate with Yale University's [Gerstein Lab](https://www.gersteinlab.org/), working on medical multi-agent systems for clinical decision support under the guidance of [Prof. Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en) and [Xiangru Tang](https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en).
 
