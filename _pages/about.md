@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 Hello! Welcome to my page 👋
 
 I am a PhD student at ETH Zürich, advised by [Prof. Michael Moor](https://michaelmoor.me/) at the [Medical AI Lab](https://bsse.ethz.ch/mail).
