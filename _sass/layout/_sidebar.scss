@@ -17,10 +17,10 @@
     height: 100vh;
     overflow-y: auto;
     position: fixed;
-    left: 1em;
+    left: 0;
     top: $masthead-height;
     width: 250px;
-    z-index: 10;
+    z-index: 1;
     background: var(--global-bg-color);
     border-right: 1px solid var(--global-border-color);
     padding: 1em;

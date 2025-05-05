@@ -12,7 +12,8 @@
   animation-delay: 0.35s;
   position: relative;
   min-height: 100vh;
-  margin-left: calc(250px + 2em); /* Match desktop sidebar width */
+  margin-left: 250px; /* Match sidebar width exactly */
+  z-index: 2; /* Higher z-index to stay above sidebar */
 
   @include breakpoint($x-large) {
     max-width: $x-large;
