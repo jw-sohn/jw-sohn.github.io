@@ -7,35 +7,15 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
-
-  @include clearfix();
-  margin-bottom: 1em;
-
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;
-    position: fixed;
-    padding-top: $masthead-height;
-    min-width: 250px;
-  }
-
-  @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  @include breakpoint($x-large) {
-    max-width: $sidebar-link-max-width;
-    padding-right: 0;
-  }
+  position: fixed;
+  left: 0;
+  top: $masthead-height;
+  width: 250px;
+  height: calc(100vh - #{$masthead-height});
+  overflow-y: auto;
+  z-index: 10;
+  background: var(--global-bg-color);
+  border-right: 1px solid var(--global-border-color);
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
@@ -58,19 +38,7 @@
 }
 
 .sidebar__right {
-  margin-bottom: 1em;
-
-  @include breakpoint($large) {
-    position: relative;
-    float: right;
-    width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
-    z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-  }
+  display: none;
 }
 
 /*
