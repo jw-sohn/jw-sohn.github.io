@@ -12,8 +12,8 @@
   animation-delay: 0.35s;
   position: relative;
   min-height: 100vh;
-  margin-left: 250px; /* Match sidebar width exactly */
-  z-index: 2; /* Higher z-index to stay above sidebar */
+  margin-left: $sidebar-link-max-width;
+  z-index: 2;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
