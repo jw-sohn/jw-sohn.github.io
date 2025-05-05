@@ -15,4 +15,4 @@ Previously, I completed my Master's degree in Computer Science and Engineering a
 
 My research interests lie in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and medical artificial intelligence (MAI).
 
-You can find my [CV](https://drive.google.com/file/d/1ylIhycQhHHcpu64H05w4wYu58qo3JjST/view?usp=sharing), and [publications](https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en).
+You can find my [CV](https://drive.google.com/file/d/1b6ZTmEhZz-WqvIrTJOhyIHJij3SxTlWP/view?usp=sharing), and [publications](https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en).
