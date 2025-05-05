@@ -8,7 +8,7 @@
 
 .sidebar {
   position: fixed;
-  left: 0;
+  left: 1em;
   top: $masthead-height;
   width: 250px;
   height: calc(100vh - #{$masthead-height});
