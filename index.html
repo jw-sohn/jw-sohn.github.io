@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Start of Selection -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
   .modern-font {
@@ -23,7 +23,7 @@
   }
   .simple-img-anim {
     max-width: 400px;
-    width: 100vw;
+    width: 100%;
     height: auto;
     border-radius: 0;
     box-shadow: none;
@@ -35,10 +35,10 @@
   }
   @media (max-width: 600px) {
     .simple-img-anim {
-      max-width: 100vw;
-      width: 100vw;
-      margin-left: 0;
-      margin-right: 0;
+      max-width: calc(100vw - 32px);
+      width: 100%;
+      margin-left: 16px;
+      margin-right: 16px;
     }
   }
   .simple-img-anim:hover {
@@ -61,7 +61,7 @@
       class="simple-img-anim"
       width="400"
       height="400"
-      style="max-width:400px; width:100vw; height:auto; image-rendering: pixelated; image-rendering: crisp-edges; border-radius: 0; box-shadow: none; margin-top:40px; margin-bottom:40px;"
+      style="max-width:400px; width:100%; height:auto; image-rendering: pixelated; image-rendering: crisp-edges; border-radius: 0; box-shadow: none; margin-top:40px; margin-bottom:40px;"
     ></canvas>
   </div>
   <script>
@@ -153,10 +153,11 @@
     // Responsive canvas sizing and redraw every second
     function resizeAndDrawWorm() {
       const canvas = document.getElementById('worm-canvas');
-      // On mobile, use full device width; otherwise, up to 400px or 95vw
+      // On mobile, use full device width minus margin; otherwise, up to 400px or 95vw
       let size;
       if (window.innerWidth <= 600) {
-        size = window.innerWidth;
+        size = window.innerWidth - 32;
+        if (size < 100) size = window.innerWidth; // fallback for very small screens
       } else {
         size = Math.min(400, Math.floor(window.innerWidth * 0.95));
       }
@@ -180,4 +181,4 @@
     <a href="https://github.com/jw-sohn" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">GITHUB</a>
     <a href="https://x.com/de_Jiung" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">X</a>
   </p>
-</div>
+</div
