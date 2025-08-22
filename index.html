@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
   .modern-font {
@@ -21,16 +22,24 @@
     text-shadow: 0 2px 12px rgba(0,87,255,0.08);
   }
   .simple-img-anim {
-    max-width:400px; 
-    width:100%; 
-    height:auto; 
-    border-radius: 0; 
+    max-width: 400px;
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
     box-shadow: none;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     transition: transform 0.2s ease;
     display: block;
     margin: 40px auto 40px auto;
+  }
+  @media (max-width: 600px) {
+    .simple-img-anim {
+      max-width: 100vw;
+      width: 100vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   .simple-img-anim:hover {
     transform: scale(1.04);
@@ -52,7 +61,7 @@
       class="simple-img-anim"
       width="400"
       height="400"
-      style="max-width:400px; width:100%; height:auto; image-rendering: pixelated; image-rendering: crisp-edges; border-radius: 0; box-shadow: none; margin-top:40px; margin-bottom:40px;"
+      style="max-width:400px; width:100vw; height:auto; image-rendering: pixelated; image-rendering: crisp-edges; border-radius: 0; box-shadow: none; margin-top:40px; margin-bottom:40px;"
     ></canvas>
   </div>
   <script>
@@ -144,8 +153,13 @@
     // Responsive canvas sizing and redraw every second
     function resizeAndDrawWorm() {
       const canvas = document.getElementById('worm-canvas');
-      // Set width to 400 or window width, whichever is smaller
-      const size = Math.min(400, Math.floor(window.innerWidth * 0.95));
+      // On mobile, use full device width; otherwise, up to 400px or 95vw
+      let size;
+      if (window.innerWidth <= 600) {
+        size = window.innerWidth;
+      } else {
+        size = Math.min(400, Math.floor(window.innerWidth * 0.95));
+      }
       canvas.width = size;
       canvas.height = size;
       rand = mulberry32(getCurrentSeed());
