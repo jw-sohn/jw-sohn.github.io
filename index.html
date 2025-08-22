@@ -51,23 +51,23 @@
   /* Responsive margin adjustments for mobile */
   @media (max-width: 600px) {
     .modern-font {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      padding-left: 4px !important;
+      padding-right: 4px !important;
       width: 100vw;
       box-sizing: border-box;
       max-width: 100vw;
     }
     .modern-font .simple-img-anim {
-      margin: 20px 0 20px 0 !important;
-      max-width: 100% !important;
-      width: 100% !important;
+      margin: 8px 0 8px 0 !important;
+      max-width: 100vw !important;
+      width: 100vw !important;
     }
     .modern-font .social-links {
-      margin: 24px 0 24px 0 !important;
+      margin: 10px 0 10px 0 !important;
     }
     .modern-font .name-title {
-      margin-top: 18px !important;
-      margin-bottom: 18px !important;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
     }
   }
 </style>
@@ -175,10 +175,10 @@
     // Responsive canvas sizing and redraw every second
     function resizeAndDrawWorm() {
       const canvas = document.getElementById('worm-canvas');
-      // On mobile, fill width minus 40px (20px margin each side), else max 400px
+      // On mobile, fill width minus 8px (4px margin each side), else max 400px
       let size;
       if (window.innerWidth <= 600) {
-        size = Math.max(40, Math.floor(window.innerWidth - 40));
+        size = Math.max(20, Math.floor(window.innerWidth - 8));
       } else {
         size = Math.min(400, Math.floor(window.innerWidth * 0.95));
       }
@@ -194,12 +194,12 @@
       setInterval(resizeAndDrawWorm, 1000);
     });
   </script>
-  <p class="social-links" style="text-align:center; margin: 44px 0 44px 0; font-size:0.7em; color: #6b7280; text-transform:uppercase;">
+  <p class="social-links" style="text-align:center; margin: 20px 0 20px 0; font-size:0.7em; color: #6b7280; text-transform:uppercase;">
     <!-- <a href="data/cv.pdf">CV</a> -->
-    <a href="mailto:jisohn@ethz.ch" style="margin: 0 16px;">EMAIL</a>
-    <a href="https://www.linkedin.com/in/jiwoong-sohn/" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-    <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">GOOGLE SCHOLAR</a>
-    <a href="https://github.com/jw-sohn" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">GITHUB</a>
-    <a href="https://x.com/de_Jiung" style="margin: 0 16px;" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="mailto:jisohn@ethz.ch" style="margin: 0 8px;">EMAIL</a>
+    <a href="https://www.linkedin.com/in/jiwoong-sohn/" style="margin: 0 8px;" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+    <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en" style="margin: 0 8px;" target="_blank" rel="noopener noreferrer">GOOGLE SCHOLAR</a>
+    <a href="https://github.com/jw-sohn" style="margin: 0 8px;" target="_blank" rel="noopener noreferrer">GITHUB</a>
+    <a href="https://x.com/de_Jiung" style="margin: 0 8px;" target="_blank" rel="noopener noreferrer">X</a>
   </p>
 </div>
