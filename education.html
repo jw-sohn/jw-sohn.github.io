@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Jiwoong Sohn</title>
+    <title>Education - Jiwoong Sohn</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
       html, body {
@@ -21,7 +21,7 @@
         -moz-osx-font-smoothing: grayscale;
         margin: 0 auto;
         padding: 15px;
-        max-width: 500px;
+        max-width: 700px;
         line-height: 1.4;
         box-sizing: border-box;
       }
@@ -30,52 +30,32 @@
         text-align: center;
         font-size: 1.2em;
         font-weight: 700;
-        margin: 40px 0;
+        margin: 25px 0;
         letter-spacing: 0.03em;
       }
       
-      .links {
-        text-align: center;
-        margin: 50px 0;
+      .education-item {
+        margin-bottom: 20px;
       }
       
-      .links a {
-        color: #666;
-        text-decoration: none;
-        margin: 0 10px;
-        font-size: 0.6em;
-      }
-      
-      .links a:hover {
+      .education-item h3 {
+        font-size: 0.85em;
+        font-weight: 700;
         color: #000;
+        margin: 0 0 6px 0;
+        letter-spacing: 0.02em;
       }
       
-      .canvas-container {
-        text-align: center;
-        margin: 60px 0;
+      .education-item p {
+        margin: 3px 0;
+        color: #666;
+        font-size: 0.8em;
+        letter-spacing: 0.015em;
       }
       
-      canvas {
-        max-width: 100%;
-        height: auto;
-        transition: transform 0.2s ease;
-      }
-      
-      canvas:hover {
-        transform: scale(1.08);
-      }
-      
-
-
-      /* Responsive adjustments for mobile */
-      @media (max-width: 600px) {
-        body {
-          padding-left: 4px !important;
-          padding-right: 4px !important;
-          width: 100vw;
-          box-sizing: border-box;
-          max-width: 100vw;
-        }
+      .advisor {
+        font-style: italic;
+        color: #888;
       }
 
       /* Menu Button */
@@ -187,17 +167,28 @@
         opacity: 1;
         visibility: visible;
       }
+
+      /* Responsive adjustments for mobile */
+      @media (max-width: 600px) {
+        body {
+          padding-left: 4px !important;
+          padding-right: 4px !important;
+          width: 100vw;
+          box-sizing: border-box;
+          max-width: 100vw;
+        }
+      }
     </style>
 </head>
 <body>
     <!-- Menu Button -->
-    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <button class="menu-button hidden" onclick="toggleMenu()">☰</button>
 
     <!-- Overlay -->
-    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+    <div class="overlay" onclick="closeMenu()"></div>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar open">
         <button class="close-button" onclick="closeMenu()">×</button>
         <div class="sidebar-section">
             <div class="section-title">JIWOONG's</div>
@@ -214,126 +205,20 @@
             </div>
         </div>
     </div>
+    <div class="name">EDUCATION</div>
+    <div class="education-item" style="margin-top: 20px;">
+        <h3>ETH Zürich</h3>
+        <p><strong>PhD</strong> | 2025 - Present</p>
+    </div>
+    
+    <div class="education-item">
+        <h3>Korea University</h3>
+        <p><strong>MS</strong> | 2025</p>
+    </div>
 
-    <div class="name">JIWOONG SOHN</div>
-
-      <div class="canvas-container">
-        <canvas id="worm-canvas" width="400" height="400"></canvas>
-      </div>
-      <script>
-        // Simple seeded random number generator (mulberry32)
-        function mulberry32(seed) {
-          return function() {
-            var t = seed += 0x6D2B79F5;
-            t = Math.imul(t ^ t >>> 15, t | 1);
-            t ^= t + Math.imul(t ^ t >>> 7, t | 61);
-            return ((t ^ t >>> 14) >>> 0) / 4294967296;
-          }
-        }
-
-        // Get a seed based on the current time, down to the second
-        function getCurrentSeed() {
-          const now = new Date();
-          return now.getFullYear() * 10000000000 +
-                 (now.getMonth()+1) * 100000000 +
-                 now.getDate() * 1000000 +
-                 now.getHours() * 10000 +
-                 now.getMinutes() * 100 +
-                 Math.floor(now.getSeconds() / 5);
-        }
-
-        let rand = mulberry32(getCurrentSeed());
-
-        function drawWorm(canvas) {
-          const ctx = canvas.getContext('2d');
-          const w = canvas.width;
-          const h = canvas.height;
-          ctx.clearRect(0, 0, w, h);
-
-          // Background: white
-          ctx.fillStyle = "#fff";
-          ctx.fillRect(0, 0, w, h);
-
-          // Worm parameters (narrower lines)
-          const steps = 600 + Math.floor(rand() * 400);
-          const wormLength = 60 + Math.floor(rand() * 40);
-          const wormRadius = 2.2 + rand() * 0.8; 
-          let x = w/2 + (rand()-0.5)*w*0.2;
-          let y = h/2 + (rand()-0.5)*h*0.2;
-          let angle = rand() * Math.PI * 2;
-
-          // Store worm segments for trailing effect
-          let segments = [];
-
-          for (let i = 0; i < steps; ++i) {
-            // Black for head, trailing segments fade to gray
-            let baseAlpha = 0.95;
-            ctx.fillStyle = `rgba(0,0,0,${baseAlpha})`;
-
-            // Draw segment (head)
-            ctx.beginPath();
-            ctx.arc(x, y, wormRadius, 0, 2*Math.PI);
-            ctx.fill();
-
-            // Store segment for trailing
-            segments.push({x, y});
-
-            // Remove oldest segment if too long
-            if (segments.length > wormLength) segments.shift();
-
-            // Draw trailing effect (fainter, grayscale)
-            for (let j = 0; j < segments.length; ++j) {
-              let seg = segments[j];
-              // Fade from black to light gray
-              let alpha = 0.08 + 0.25 * (j / wormLength);
-              ctx.beginPath();
-              ctx.arc(seg.x, seg.y, wormRadius*0.7, 0, 2*Math.PI);
-              ctx.fillStyle = `rgba(0,0,0,${alpha})`;
-              ctx.fill();
-            }
-
-            // Move worm
-            angle += (rand()-0.5)*0.7; // random turn
-            let speed = 2.2 + rand()*1.2;
-            x += Math.cos(angle) * speed;
-            y += Math.sin(angle) * speed;
-
-            // Bounce off edges
-            if (x < wormRadius) { x = wormRadius; angle = Math.PI - angle; }
-            if (x > w-wormRadius) { x = w-wormRadius; angle = Math.PI - angle; }
-            if (y < wormRadius) { y = wormRadius; angle = -angle; }
-            if (y > h-wormRadius) { y = h-wormRadius; angle = -angle; }
-          }
-        }
-
-        // Responsive canvas sizing and redraw every second
-        function resizeAndDrawWorm() {
-          const canvas = document.getElementById('worm-canvas');
-          // On mobile, fill width minus 8px (4px margin each side), else max 400px
-          let size;
-          if (window.innerWidth <= 600) {
-            size = Math.max(20, Math.floor(window.innerWidth - 8));
-          } else {
-            size = Math.min(400, Math.floor(window.innerWidth * 0.95));
-          }
-          canvas.width = size;
-          canvas.height = size;
-          rand = mulberry32(getCurrentSeed());
-          drawWorm(canvas);
-        }
-
-        window.addEventListener('resize', resizeAndDrawWorm);
-        window.addEventListener('DOMContentLoaded', () => {
-          resizeAndDrawWorm();
-          setInterval(resizeAndDrawWorm, 1000);
-        });
-      </script>
-    <div class="links">
-      <a href="mailto:jisohn@ethz.ch">EMAIL</a>
-      <a href="https://www.linkedin.com/in/jiwoong-sohn/" target="_blank">LINKEDIN</a>
-      <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en" target="_blank">GOOGLE SCHOLAR</a>
-      <a href="https://github.com/jw-sohn" target="_blank">GITHUB</a>
-      <a href="https://x.com/de_Jiung" target="_blank">X</a>
+    <div class="education-item">
+        <h3>Korea University</h3>
+        <p><strong>BS, BE</strong> | 2023</p>
     </div>
 
     <script>
@@ -371,8 +256,6 @@
                 closeMenu();
             }
         });
-
-
     </script>
 </body>
-</html>
+</html> 
