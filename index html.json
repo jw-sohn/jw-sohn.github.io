@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jiwoong (Andrew) Sohn</title>
+
+    <meta name="author" content="Jiwoong (Andrew) Sohn">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Visitor Counter begin -->
+    <!-- Removed old visitor counter script -->
+    <!-- Visitor Counter end -->
+
+    <style>
+      :root {
+        --profile-img-top-offset: 114px; /* minor variable for vertical alignment */
+      }
+      .profile-img-align {
+        position: relative;
+        top: var(--profile-img-top-offset);
+        /* keep other styles as before */
+        width: 75%;
+        max-width: 1000%;
+        object-fit: cover;
+        border-radius: 3px;
+        display: block;
+      }
+      @media (max-width: 600px) {
+        .profile-img-align {
+          top: 0;
+        }
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px;vertical-align:top;">
+        <td style="padding:0px;vertical-align:top;">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px;vertical-align:top;">
+              <td style="padding:2.5%;width:63%;vertical-align:top;">
+                <p class="name" style="text-align:left; margin: 18px 0 29px 0;">
+                  Jiwoong (Andrew) Sohn
+                </p>
+                <p>
+                  Hello. I'm a PhD Student at <a href="https://ethz.ch/en.html/">ETH Zürich</a>.<br><br>
+                  I'm fortunate to be advised by  <a href="https://michaelmoor.me/">Prof. Michael Moor </a> at <a href="https://bsse.ethz.ch/mail">Medical AI Lab</a>.<br><br>
+                  -
+                </p>
+                
+                <p>
+                  Previously, I obtained my Master's degree in Computer Science and Engineering at <a href="https://www.korea.edu/sites/en/index.do">Korea University</a> with early completion, where I was fortunate to be advised by <a href="https://scholar.google.co.kr/citations?user=RaBZafQAAAAJ&hl=ko">Prof. Jaewoo Kang</a>.
+                  I work closely with <a href="https://scholar.google.co.kr/citations?user=rqBpumIAAAAJ&hl=en">Dr. Hyunjae Kim</a> in <a href="https://sites.google.com/view/qingyuchen/home/">Qingyu Chen's Lab</a>, and
+                  <a href="https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en">Xiangru Tang</a>, <a href="https://github.com/super-dainiu">Yanjun Shao</a> in the <a href="https://www.gersteinlab.org/">Gerstein Lab</a> 
+                  at Yale University, where I was a research intern. I also work closely with <a href="https://ldi.khu.ac.kr/mujeen-sung-p-i">Prof. Mujeen Sung</a>, <a href="https://ireneli.eu/">Prof. Irene Li</a>, <a href="https://www.tomaszsternal.com/">Tomasz Sternal</a>, and <a href="https://www.linkedin.com/in/jaehoon-yun-8994a9343/?locale=en_US">Jaehoon Yun</a>.
+                </p>
+                <p>
+                  I’m always happy to connect and discuss about research.<br>
+                  Feel free to <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sohnji12/30min'});return false;">schedule a chat</a> or <a href="mailto:jisohn@ethz.ch">email me</a>! 😃
+                </p>
+              <td style="padding:1%;width:37%;max-width:37%;vertical-align:top;">
+                <a href="data/profile_2.jpg">
+                  <img style="" alt="profile photo" src="data/profile_2.jpg" class="hoverZoomLink profile-img-align">f
+                </a>
+              </td>
+            </tr>
+          </tbody></table>
+
+<!-- Research Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <p style="text-align:center; margin: -10px 0 25px 0;">
+        <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+        <a href="mailto:jisohn@ethz.ch">Email</a> &nbsp;/&nbsp;
+        <a href="https://www.linkedin.com/in/jiwoong-sohn/">LinkedIn</a> &nbsp;/&nbsp;
+        <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+        <a href="https://github.com/jw-sohn">GitHub</a> &nbsp;/&nbsp;
+        <a href="https://x.com/de_Jiung">X</a> &nbsp;/&nbsp;
+      </p>
+
+      <h2>Research</h2>
+      <p>
+        I'm interested in natural language processing (NLP), large language models (LLMs), information retrieval (IR), and medical artificial intelligence (MAI). My research focuses on developing AI solutions that can make meaningful contributions to healthcare and medicine.
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+<!-- Selected Publications Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <h2>Selected Publications</h2>
+      <p>
+        <b>[5] Med-PRM: Medical Reasoning Models with Stepwise, Guideline-verified Process Rewards</b><br>
+        <span style="color:#888;">
+          Jaehoon Yun<sup>*</sup>, <b><u><span style="color:#000;">Jiwoong Sohn<sup>*</sup></span></u></b>, Jungwoo Park<sup>*</sup>, Hyunjae Kim, Xiangru Tang, Yanjun Shao, Yonghoe Koo, Minhyeok Ko, Qingyu Chen, Mark Gerstein, Michael Moor, Jaewoo Kang
+        </span><br>
+        <a href="https://arxiv.org/abs/2506.11474">EMNLP 2025, Main Track</a>
+      </p>
+      <p>
+        <b>[4] MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning</b><br>
+        <span style="color:#888;">
+          Xiangru Tang<sup>*</sup>, Daniel Shao<sup>*</sup>, <b><u><span style="color:#000;">Jiwoong Sohn<sup>*</sup></span></u></b>, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein
+        </span><br>
+        <a href="https://arxiv.org/abs/2503.07459">arXiv:2503.07459 (2025)</a>
+      </p>
+      <p>
+        <b>[3] Rationale-Guided Retrieval Augmented Generation for Medical Question Answering</b><br>
+        <span style="color:#888;">
+          <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang
+        </span><br>
+        <a href="https://aclanthology.org/2025.naacl-long.635/">NAACL 2025, Main Track</a> (Oral)
+      </p>
+      <p>
+        <b>[2] Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks</b><br>
+        <span style="color:#888;">
+          Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Donghee Cho, Jaewoo Kang
+        </span><br>
+        <a href="https://arxiv.org/abs/2404.00376">NPJ Digital Medicine</a>
+      </p>
+      <p>
+        <b>[1] Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models</b><br>
+        <span style="color:#888;">
+          Minbyul Jeong, <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Mujeen Sung, Jaewoo Kang
+        </span><br>
+        <a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892">ISMB 2024, Bioinformatics 2024</a> (Oral)
+      </p>
+      <p style="font-size: 90%; margin-top: 10px;">
+        For a full list, see my <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en">Google Scholar</a>.
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<!-- Other Publications Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <h2>Other Publications</h2>
+      <p>
+        <b>[3] DMIS Lab at MedHopQA-2025: Ensemble Multi-Retrieval Methodologies with Reasoning Language Model Decision</b><br>
+        <span style="color:#888;">
+          Jongmyung Jung<sup>*</sup>, Hyeongsoon Hwang<sup>*</sup>, Yein Park<sup>*</sup>, Minju Song, Jaehoon Yoon, Hyeon Hwang, Sanghoon Lee, <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Jaewoo Kang
+        </span><br>
+        <a href="https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9">IJCAI 2025, Biocreative IX</a>
+      </p>
+      <p>
+        <b>[2] DMIS Lab at ArchEHR-QA 2025: Evidence-Grounded Answer Generation for EHR-based QA via a Multi-Agent Framework</b><br>
+        <span style="color:#888;">
+          Hyeon Hwang<sup>*</sup>, Hyeongsoon Hwang<sup>*</sup>, Jongmyung Jung, Jaehoon Yun, Minju Song, Yein Park, Dain Kim, Taewhoo Lee,<br>
+          <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Chanwoong Yoon, Sihyeon Park, Jiwoo Lee, Heechul Yang, Jaewoo Kang
+        </span><br>
+        <a href="https://aclanthology.org/2025.bionlp-share.15/">ACL 2025, BioNLP</a>
+      </p>
+      <p>
+        <b>[1] KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports</b><br>
+        <span style="color:#888;">
+          Hajung Kim, Chanhwi Kim, <b><u><span style="color:#000;">Jiwoong Sohn</span></u></b>, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang
+        </span><br>
+        <a href="https://spiral.imperial.ac.uk/handle/10044/1/108095">AMIA 2023, BioCreative VIII</a>
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<!-- Honors and Awards Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <h2>Honors and Awards</h2>
+      
+      <!-- Scholarships and Academic Honors -->
+      <p>
+        <h3>Scholarships and Academic Honors</h3>
+        <p>
+          <b>[4] Integrated Bachelor's and Master's Scholarship (50% Tuition)</b> (Sep. 2023 - Feb. 2025)<br>
+          <span style="color:#888;">Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees</span>
+        </p>
+        <p>
+          <b>[3] Early Completion</b> (Sep. 2023 - Feb. 2025)<br>
+          <span style="color:#888;">Awarded based on GPA of 4.0 or above in both Bachelor's and Master's degrees</span>
+        </p>
+        <p>
+          <b>[2] Semester High Honors</b> (Fall 2020)
+        </p>
+        <p>
+          <b>[1] Semester High Honors</b> (Fall 2019)
+        </p>
+      </p>
+
+      <!-- Competition Prizes -->
+      <p>
+        <h3>Competition Prizes</h3>
+        <p>
+          <b>[5] 1st Prize, Shared Task on MedHopQA</b> (<a href="https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9">BioCreative IX (IJCAI 2025)</a>) — Aug 2025
+        </p>
+        <p>
+          <b>[4] Top Performing Teams, Shared Task on Clinical Text Generation</b> (<a href="https://stanford-aimi.github.io/discharge-me/">ACL 2024 BioNLP</a>) — May 2024
+        </p>
+        <p>
+          <b>[3] 2nd Prize (5,000 USD), iPBL Competition</b> (<b>LG Electronics</b>) — Feb. 2024
+        </p>
+        <p>
+          <b>[2] 3rd Prize, Genetic Phenotype Extraction</b> (<a href="https://biocreative.bioinformatics.udel.edu/events/biocreative-viii/biocreative-viii-challenge/">BioCreative VIII (AMIA 2023)</a>) — Sep. 2023
+        </p>
+        <p>
+          <b>[1] 2nd Prize, SDGs Innovation Arduino-based Technology Competition</b> — Dec. 2020
+        </p>
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<!-- Teaching Experience Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <h2>Teaching Experience</h2>
+      <p>
+        <b>[6] Multimodal Medical AI (262-0201-00L)</b> — Fall 2025<br>
+        <span style="color:#888;">Teaching Assistant</span>
+      </p>
+      <p>
+        <b>[5] SW Programming Basics (GECT002)</b> — Spring 2024<br>
+        <span style="color:#888;">Teaching Assistant</span>
+      </p>
+      <p>
+        <b>[4] Machine Learning (COSE362)</b> — Fall 2023<br>
+        <span style="color:#888;">Teaching Assistant</span>
+      </p>
+      <p>
+        <b>[3] Advanced Data Science for Finance (DFE620)</b> — Fall 2023<br>
+        <span style="color:#888;">Teaching Assistant</span>
+      </p>
+      <p>
+        <b>[2] Python Programming for Everybody (COSE156)</b> — Fall 2020<br>
+        <span style="color:#888;">Teaching Assistant</span>
+      </p>
+      <p>
+        <b>[1] Private Academies and Tutoring</b> — 2016 - 2023<br>
+        <span style="color:#888;">Math Instructor, Physics Instructor, Chemistry Instructor</span>
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<!-- Invited Talks Section -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:16px;width:100%;vertical-align:middle">
+      <h2>Invited Talks</h2>
+      <p>
+        <b>[2] 6th SFCNS Congress 2025</b><br>
+        Swiss Federation of Clinical Neuro-Societies<br>
+        <a href="https://sfcns2025.congress-imk.ch/">Invited Talk, Oct. 2025</a>
+      </p>
+      <p>
+        <b>[1] Krauthammer Lab</b><br>
+        University of Zurich &amp; University Hospital Zurich<br>
+        <a href="https://krauthammerlab.ch/">Invited Talk, Jul. 2025</a>
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+<div style="text-align:center;">
+  <a href="https://clustrmaps.com/site/1c7q0" title="ClustrMaps">
+    <img src="//www.clustrmaps.com/map_v2.png?d=mZn6xw0NJEU2NeSGcLEj0Wy6yp7N0ni6lasCNbDii-U&cl=ffffff" />
+  </a>
+</div>
+</body>
