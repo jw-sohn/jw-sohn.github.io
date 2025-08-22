@@ -39,16 +39,6 @@
   .modern-font-content-spacer {
     height: 10px;
   }
-  /* Make canvas take full width on mobile */
-  @media (max-width: 600px) {
-    .simple-img-anim {
-      max-width: 100vw !important;
-      width: 100vw !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      border-radius: 0 !important;
-    }
-  }
 </style>
 <div class="modern-font">
   <div class="modern-font-content-spacer"></div>
@@ -154,13 +144,8 @@
     // Responsive canvas sizing and redraw every second
     function resizeAndDrawWorm() {
       const canvas = document.getElementById('worm-canvas');
-      // On mobile, use full viewport width; otherwise, 400 or window width, whichever is smaller
-      let size;
-      if (window.innerWidth <= 600) {
-        size = window.innerWidth;
-      } else {
-        size = Math.min(400, Math.floor(window.innerWidth * 0.95));
-      }
+      // Set width to 400 or window width, whichever is smaller
+      const size = Math.min(400, Math.floor(window.innerWidth * 0.95));
       canvas.width = size;
       canvas.height = size;
       rand = mulberry32(getCurrentSeed());
