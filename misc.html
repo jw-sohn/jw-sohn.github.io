@@ -117,7 +117,7 @@
       }
 
       /* Responsive adjustments for mobile */
-      @media (max-width: 1100px) {
+      @media (max-width: 1200px) {
         body {
           padding-left: 4px !important;
           padding-right: 4px !important;
@@ -149,13 +149,13 @@
           display: flex !important;
           flex-direction: row !important;
           flex-wrap: wrap !important;
-          gap: 20px !important;
+          gap: 12px !important;
           justify-content: center !important;
         }
         
         .nav-links a {
           display: block;
-          padding: 12px 0;
+          padding: 8px 0;
           color: #000;
           text-decoration: none;
           transition: all 0.2s;
@@ -176,94 +176,12 @@
         }
         
         .name {
-          margin-top: 150px !important;
+          margin-top: 120px !important;
         }
         
         .section {
           margin: 0 20px !important;
         }
-      }
-    </style>
-    
-    <style>
-      .photo-grid-container {
-        height: 400px;
-        overflow-y: auto;
-        margin: 20px 0;
-        padding: 20px;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-        border: 2px solid #e9ecef;
-        position: relative;
-      }
-      
-      .photo-grid-inner {
-        background: #f8f9fa;
-        border-radius: 12px;
-        padding: 15px;
-        height: 100%;
-        border: 1px solid #dee2e6;
-      }
-      
-      .photo-grid-container::-webkit-scrollbar {
-        width: 6px;
-      }
-      
-      .photo-grid-container::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 3px;
-      }
-      
-      .photo-grid-container::-webkit-scrollbar-thumb {
-        background: #c1c1c1;
-        border-radius: 3px;
-      }
-      
-      .photo-grid-container::-webkit-scrollbar-thumb:hover {
-        background: #a8a8a8;
-      }
-      
-      .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        width: 100%;
-      }
-      
-      .photo-item {
-        aspect-ratio: 1;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
-        background: white;
-        position: relative;
-      }
-      
-      .photo-item:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      }
-      
-      .photo-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      .photo-caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent, rgba(0,0,0,0.7));
-        color: white;
-        font-size: 0.7em;
-        text-align: center;
-        padding: 20px 8px 8px 8px;
-        font-weight: 500;
-      }
       }
     </style>
 </head>
@@ -290,61 +208,6 @@
         <h2>Travel</h2>
         <div class="research-focus">
             <p>I love exploring new places and cultures. <br> Countries I've lived in/been to: United States, Switzerland, Germany, Japan, Italy, Austria, France, Monaco, Netherlands, Czech Republic, Hungary, Australia, and South Korea.</p>
-        </div>
-        
-        <div class="photo-grid-container">
-            <div class="photo-grid-inner">
-                <div class="photo-grid">
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=1" alt="Switzerland">
-                    <div class="photo-caption">Switzerland</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=2" alt="Japan">
-                    <div class="photo-caption">Japan</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=3" alt="Italy">
-                    <div class="photo-caption">Italy</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=4" alt="Germany">
-                    <div class="photo-caption">Germany</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=5" alt="France">
-                    <div class="photo-caption">France</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=6" alt="Austria">
-                    <div class="photo-caption">Austria</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=7" alt="Netherlands">
-                    <div class="photo-caption">Netherlands</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=8" alt="Czech Republic">
-                    <div class="photo-caption">Czech Republic</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=9" alt="Hungary">
-                    <div class="photo-caption">Hungary</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=10" alt="Australia">
-                    <div class="photo-caption">Australia</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=11" alt="Monaco">
-                    <div class="photo-caption">Monaco</div>
-                </div>
-                <div class="photo-item">
-                    <img src="https://picsum.photos/300/300?random=12" alt="South Korea">
-                    <div class="photo-caption">South Korea</div>
-                </div>
-            </div>
-            </div>
         </div>
     </div>
 
