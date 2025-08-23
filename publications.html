@@ -46,11 +46,7 @@
         letter-spacing: 0.02em;
       }
       
-      .publication-item {
-        margin-bottom: 18px;
-      }
-      
-      .publication-item h3 {
+      .publication-content h3 {
         font-size: 0.85em;
         font-weight: 700;
         color: #000;
@@ -58,20 +54,20 @@
         letter-spacing: 0.02em;
       }
       
-      .publication-item p {
+      .publication-content p {
         margin: 3px 0;
         color: #666;
         font-size: 0.8em;
         letter-spacing: 0.015em;
       }
       
-      .publication-item a {
+      .publication-content a {
         color: #666;
         text-decoration: none;
         transition: color 0.2s;
       }
       
-      .publication-item a:hover {
+      .publication-content a:hover {
         color: #000;
       }
       
@@ -86,6 +82,44 @@
         margin-top: 8px;
         color: #666;
         letter-spacing: 0.015em;
+      }
+      
+      .publication-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 18px;
+        justify-content: center;
+      }
+      
+      .publication-logo {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+        background: white;
+      }
+      
+      .publication-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 8px;
+      }
+      
+      .publication-logo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      }
+      
+      .publication-content {
+        flex: 1;
       }
 
       /* Left Navigation */
@@ -129,7 +163,7 @@
       }
 
       /* Responsive adjustments for mobile */
-      @media (max-width: 1200px) {
+      @media (max-width: 1100px) {
         body {
           padding-left: 4px !important;
           padding-right: 4px !important;
@@ -220,33 +254,58 @@
         <h2>Selected Publications</h2>
         
         <div class="publication-item">
-            <h3>[5] Med-PRM: Medical Reasoning Models with Stepwise, Guideline-verified Process Rewards</h3>
-            <p class="authors">Jaehoon Yun*, <strong style="color: black;">Jiwoong Sohn*</strong>, Jungwoo Park*, Hyunjae Kim, Xiangru Tang, Yanjun Shao, Yonghoe Koo, Minhyeok Ko, Qingyu Chen, Mark Gerstein, Michael Moor, Jaewoo Kang</p>
-            <p><a href="https://arxiv.org/abs/2506.11474" target="_blank" style="color: blue;">EMNLP 2025, Main Track</a></p>
+            <div class="publication-logo">
+                <img src="images/medprm_figure.png" alt="Med-PRM Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[5] Med-PRM: Medical Reasoning Models with Stepwise, Guideline-verified Process Rewards</h3>
+                <p class="authors">Jaehoon Yun*, <strong style="color: black;">Jiwoong Sohn*</strong>, Jungwoo Park*, Hyunjae Kim, Xiangru Tang, Yanjun Shao, Yonghoe Koo, Minhyeok Ko, Qingyu Chen, Mark Gerstein, Michael Moor, Jaewoo Kang</p>
+                <p><a href="https://arxiv.org/abs/2506.11474" target="_blank" style="color: blue;">EMNLP 2025, Main Track</a></p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[4] MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning</h3>
-            <p class="authors">Xiangru Tang*, Daniel Shao*, <strong style="color: black;">Jiwoong Sohn*</strong>, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein</p>
-            <p><a href="https://arxiv.org/abs/2503.07459" target="_blank" style="color: blue;">arXiv:2503.07459 (2025)</a></p>
+            <div class="publication-logo">
+                <img src="images/medagentsbench_figure.png" alt="MedAgentsBench Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[4] MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning</h3>
+                <p class="authors">Xiangru Tang*, Daniel Shao*, <strong style="color: black;">Jiwoong Sohn*</strong>, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein</p>
+                <p><a href="https://arxiv.org/abs/2503.07459" target="_blank" style="color: blue;">arXiv:2503.07459 (2025)</a></p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[3] Rationale-Guided Retrieval Augmented Generation for Medical Question Answering</h3>
-            <p class="authors"><strong style="color: black;">Jiwoong Sohn</strong>, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang</p>
-            <p><a href="https://aclanthology.org/2025.naacl-long.635/" target="_blank" style="color: blue;">NAACL 2025, Main Track</a> (Oral)</p>
+            <div class="publication-logo">
+                <img src="images/rationale_rag_figure.png" alt="Rationale-Guided RAG Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[3] Rationale-Guided Retrieval Augmented Generation for Medical Question Answering</h3>
+                <p class="authors"><strong style="color: black;">Jiwoong Sohn</strong>, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim, Jaewoo Kang</p>
+                <p><a href="https://aclanthology.org/2025.naacl-long.635/" target="_blank" style="color: blue;">NAACL 2025, Main Track</a> (Oral)</p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[2] Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks</h3>
-            <p class="authors">Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, <strong style="color: black;">Jiwoong Sohn</strong>, Donghee Cho, Jaewoo Kang</p>
-            <p><a href="https://arxiv.org/abs/2404.00376" target="_blank" style="color: blue;">NPJ Digital Medicine</a></p>
+            <div class="publication-logo">
+                <img src="images/slm_medical_figure.png" alt="SLM Medical Reasoning Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[2] Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks</h3>
+                <p class="authors">Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, <strong style="color: black;">Jiwoong Sohn</strong>, Donghee Cho, Jaewoo Kang</p>
+                <p><a href="https://arxiv.org/abs/2404.00376" target="_blank" style="color: blue;">NPJ Digital Medicine</a></p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[1] Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models</h3>
-            <p class="authors">Minbyul Jeong, <strong style="color: black;">Jiwoong Sohn</strong>, Mujeen Sung, Jaewoo Kang</p>
-            <p><a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892" target="_blank" style="color: blue;">ISMB 2024, Bioinformatics 2024</a> (Oral)</p>
+            <div class="publication-logo">
+                <img src="images/medical_reasoning_rag_figure.png" alt="Medical Reasoning RAG Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[1] Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models</h3>
+                <p class="authors">Minbyul Jeong, <strong style="color: black;">Jiwoong Sohn</strong>, Mujeen Sung, Jaewoo Kang</p>
+                <p><a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892" target="_blank" style="color: blue;">ISMB 2024, Bioinformatics 2024</a> (Oral)</p>
+            </div>
         </div>
 
         <p class="full-list">For a full list, see my <a href="https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
@@ -256,21 +315,36 @@
         <h2>Other Publications</h2>
         
         <div class="publication-item">
-            <h3>[3] DMIS Lab at MedHopQA-2025: Ensemble Multi-Retrieval Methodologies with Reasoning Language Model Decision</h3>
-            <p class="authors">Jongmyung Jung*, Hyeongsoon Hwang*, Yein Park*, Minju Song, Jaehoon Yoon, Hyeon Hwang, Sanghoon Lee, <strong style="color: black;">Jiwoong Sohn</strong>, Jaewoo Kang</p>
-            <p><a href="https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9" target="_blank" style="color: blue;">IJCAI 2025, Biocreative IX</a></p>
+            <div class="publication-logo">
+                <img src="images/medhopqa_figure.png" alt="MedHopQA Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[3] DMIS Lab at MedHopQA-2025: Ensemble Multi-Retrieval Methodologies with Reasoning Language Model Decision</h3>
+                <p class="authors">Jongmyung Jung*, Hyeongsoon Hwang*, Yein Park*, Minju Song, Jaehoon Yoon, Hyeon Hwang, Sanghoon Lee, <strong style="color: black;">Jiwoong Sohn</strong>, Jaewoo Kang</p>
+                <p><a href="https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9" target="_blank" style="color: blue;">IJCAI 2025, Biocreative IX</a></p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[2] DMIS Lab at ArchEHR-QA 2025: Evidence-Grounded Answer Generation for EHR-based QA via a Multi-Agent Framework</h3>
-            <p class="authors">Hyeon Hwang*, Hyeongsoon Hwang*, Jongmyung Jung, Jaehoon Yun, Minju Song, Yein Park, Dain Kim, Taewhoo Lee, <strong style="color: black;">Jiwoong Sohn</strong>, Chanwoong Yoon, Sihyeon Park, Jiwoo Lee, Heechul Yang, Jaewoo Kang</p>
-            <p><a href="https://aclanthology.org/2025.bionlp-share.15/" target="_blank" style="color: blue;">ACL 2025, BioNLP</a></p>
+            <div class="publication-logo">
+                <img src="images/archehr_qa_figure.png" alt="ArchEHR-QA Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[2] DMIS Lab at ArchEHR-QA 2025: Evidence-Grounded Answer Generation for EHR-based QA via a Multi-Agent Framework</h3>
+                <p class="authors">Hyeon Hwang*, Hyeongsoon Hwang*, Jongmyung Jung, Jaehoon Yun, Minju Song, Yein Park, Dain Kim, Taewhoo Lee, <strong style="color: black;">Jiwoong Sohn</strong>, Chanwoong Yoon, Sihyeon Park, Jiwoo Lee, Heechul Yang, Jaewoo Kang</p>
+                <p><a href="https://aclanthology.org/2025.bionlp-share.15/" target="_blank" style="color: blue;">ACL 2025, BioNLP</a></p>
+            </div>
         </div>
 
         <div class="publication-item">
-            <h3>[1] KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports</h3>
-            <p class="authors">Hajung Kim, Chanhwi Kim, <strong style="color: black;">Jiwoong Sohn</strong>, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang</p>
-            <p><a href="https://spiral.imperial.ac.uk/handle/10044/1/108095" target="_blank" style="color: blue;">AMIA 2023, BioCreative VIII</a></p>
+            <div class="publication-logo">
+                <img src="images/phenotype_ner_figure.png" alt="Phenotype NER Figure">
+            </div>
+            <div class="publication-content">
+                <h3>[1] KU AIGEN ICL EDI@BC8 Track 3: Advancing Phenotype Named Entity Recognition and Normalization for Dysmorphology Physical Examination Reports</h3>
+                <p class="authors">Hajung Kim, Chanhwi Kim, <strong style="color: black;">Jiwoong Sohn</strong>, Tim Beck, Marek Rei, Sunkyu Kim, T. Ian Simpson, Joram M. Posma, Antoine Lain, Mujeen Sung, Jaewoo Kang</p>
+                <p><a href="https://spiral.imperial.ac.uk/handle/10044/1/108095" target="_blank" style="color: blue;">AMIA 2023, BioCreative VIII</a></p>
+            </div>
         </div>
     </div>
 

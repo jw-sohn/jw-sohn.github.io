@@ -43,7 +43,7 @@
         color: #666;
         text-decoration: none;
         margin: 0 8px;
-        font-size: 0.6em;
+        font-size: 0.7em;
         display: inline-block;
       }
       
@@ -69,7 +69,7 @@
 
 
       /* Responsive adjustments for mobile */
-      @media (max-width: 1200px) {
+      @media (max-width: 1100px) {
         body {
           padding-left: 4px !important;
           padding-right: 4px !important;
@@ -224,7 +224,7 @@
                  now.getDate() * 1000000 +
                  now.getHours() * 10000 +
                  now.getMinutes() * 100 +
-                 Math.floor(now.getSeconds() / 5);
+                 Math.floor(now.getSeconds() / 4);
         }
 
         let rand = mulberry32(getCurrentSeed());
@@ -310,7 +310,7 @@
         window.addEventListener('resize', resizeAndDrawWorm);
         window.addEventListener('DOMContentLoaded', () => {
           resizeAndDrawWorm();
-          setInterval(resizeAndDrawWorm, 1000);
+          setInterval(resizeAndDrawWorm, 4000);
         });
       </script>
     <div class="links">
