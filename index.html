@@ -10,6 +10,17 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        min-height: 100vh;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      .content {
+        flex: 1;
       }
       
       body {
@@ -69,7 +80,7 @@
 
 
       /* Responsive adjustments for mobile */
-      @media (max-width: 1200px) {
+      @media (max-width: 1010px) {
         body {
           padding-left: 4px !important;
           padding-right: 4px !important;
@@ -184,6 +195,7 @@
     </style>
 </head>
 <body>
+    <div class="content">
     <!-- Left Navigation -->
     <div class="left-nav">
         <div class="nav-section">
@@ -327,5 +339,7 @@
     <a href="https://clustrmaps.com/site/1c7q0" title="ClustrMaps" style="display: none;">
       <img src="//www.clustrmaps.com/map_v2.png?d=mZn6xw0NJEU2NeSGcLEj0Wy6yp7N0ni6lasCNbDii-U&cl=ffffff" />
     </a>
+    </div>
+    
 </body>
 </html>
