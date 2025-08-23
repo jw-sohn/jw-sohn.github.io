@@ -30,7 +30,7 @@
         text-align: center;
         font-size: 1.2em;
         font-weight: 700;
-        margin: 25px 0;
+        margin: 40px 0;
         letter-spacing: 0.03em;
       }
       
@@ -76,142 +76,120 @@
         color: #000;
       }
 
-      /* Menu Button */
-      .menu-button {
+      /* Left Navigation */
+      .left-nav {
         position: fixed;
-        top: 40px;
         left: 0;
-        background: #666;
-        color: white;
-        border: none;
-        padding: 8px 12px;
-        font-size: 14px;
-        cursor: pointer;
-        z-index: 1001;
-        transition: background 0.3s;
-        font-family: inherit;
-        letter-spacing: 0.015em;
-        text-transform: uppercase;
-      }
-
-      .menu-button:hover {
-        background: #888;
-      }
-
-      .menu-button.hidden {
-        display: none;
-      }
-
-      /* Sidebar */
-      .sidebar {
-        position: fixed;
         top: 0;
-        left: -280px;
-        width: 280px;
+        width: 160px;
         height: 100vh;
         background: white;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: left 0.3s;
-        z-index: 1000;
+        padding: 40px 0;
         overflow-y: auto;
-        padding: 15px;
+        z-index: 1000;
         box-sizing: border-box;
-        font-family: inherit;
       }
-
-      .sidebar.open {
-        left: 0;
+      
+      .nav-section {
+        padding: 65px 30px 0 30px;
       }
-
-      .close-button {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        background: none;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-        color: #666;
-        font-family: inherit;
-      }
-
-      .close-button:hover {
-        color: #000;
-      }
-
-      .sidebar-section {
-        margin-bottom: 25px;
-      }
-
-      .section-title {
-        font-size: 1.1em;
-        font-weight: 700;
-        margin-bottom: 15px;
-        color: #000;
-        letter-spacing: 0.02em;
-      }
-
-      .section-content a {
+      
+      .nav-links a {
         display: block;
-        padding: 8px 0;
-        color: #666;
-        text-decoration: none;
-        border-bottom: 1px solid #f0f0f0;
-        transition: background 0.2s;
-        font-size: 0.85em;
-        font-family: inherit;
-        letter-spacing: 0.015em;
-      }
-
-      .section-content a:hover {
-        background: #f8f8f8;
+        padding: 12px 0;
         color: #000;
+        text-decoration: none;
+        transition: all 0.2s;
+        font-size: 0.75em;
+        font-family: inherit;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
       }
-
-      /* Overlay */
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        z-index: 999;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s, visibility 0.3s;
+      
+      .nav-links a:hover {
+        color: #666;
       }
-
-      .overlay.open {
-        opacity: 1;
-        visibility: visible;
+      
+      .nav-links a.active {
+        color: #000;
+        font-weight: 600;
       }
 
       /* Responsive adjustments for mobile */
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
         body {
           padding-left: 4px !important;
           padding-right: 4px !important;
           width: 100vw;
           box-sizing: border-box;
           max-width: 100vw;
+          margin: 0 !important;
+        }
+        
+        .left-nav {
+          position: fixed !important;
+          left: 0 !important;
+          top: 0 !important;
+          width: 100% !important;
+          height: auto !important;
+          background: white !important;
+          padding: 10px 0 !important;
+          overflow-y: visible !important;
+          z-index: 1000 !important;
+          box-sizing: border-box !important;
+          border-bottom: 1px solid #e0e0e0 !important;
+        }
+        
+        .nav-section {
+          padding: 0 30px !important;
+        }
+        
+        .nav-links {
+          display: flex !important;
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+          gap: 20px !important;
+          justify-content: center !important;
+        }
+        
+        .nav-links a {
+          display: block;
+          padding: 12px 0;
+          color: #000;
+          text-decoration: none;
+          transition: all 0.2s;
+          font-size: 0.75em;
+          font-family: inherit;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+        
+        .nav-links a:hover {
+          color: #666;
+        }
+        
+        .nav-links a.active {
+          color: #000;
+          font-weight: 600;
+        }
+        
+        .name {
+          margin-top: 150px !important;
+        }
+        
+        .section {
+          margin: 0 20px !important;
         }
       }
     </style>
 </head>
 <body>
-    <!-- Menu Button -->
-    <button class="menu-button hidden" onclick="toggleMenu()">☰</button>
-
-    <!-- Overlay -->
-    <div class="overlay" onclick="closeMenu()"></div>
-
-    <!-- Sidebar -->
-    <div class="sidebar open">
-        <button class="close-button" onclick="closeMenu()">×</button>
-        <div class="sidebar-section">
-            <div class="section-title">JIWOONG's</div>
-            <div class="section-content">
+    <!-- Left Navigation -->
+    <div class="left-nav">
+        <div class="nav-section">
+            <div class="nav-links">
                 <a href="index.html">HOME</a>
                 <a href="research.html">RESEARCH</a>
                 <a href="education.html">EDUCATION</a>
@@ -219,7 +197,7 @@
                 <a href="awards.html">AWARDS</a>
                 <a href="talks.html">TALKS</a>
                 <a href="teaching.html">TEACHING</a>
-                <a href="misc.html">MISC</a>
+                <a href="misc.html" class="active">MISC</a>
                 <a href="contact.html">CONTACT</a>
             </div>
         </div>
@@ -240,41 +218,6 @@
         </div>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const sidebar = document.querySelector('.sidebar');
-            const overlay = document.querySelector('.overlay');
-            const menuButton = document.querySelector('.menu-button');
-            
-            if (sidebar.classList.contains('open')) {
-                closeMenu();
-            } else {
-                sidebar.classList.add('open');
-                overlay.classList.add('open');
-                menuButton.classList.add('hidden');
-            }
-        }
 
-        function closeMenu() {
-            const sidebar = document.querySelector('.sidebar');
-            const overlay = document.querySelector('.overlay');
-            const menuButton = document.querySelector('.menu-button');
-            
-            sidebar.classList.remove('open');
-            overlay.classList.remove('open');
-            
-            // Show menu button after sidebar animation completes (300ms)
-            setTimeout(() => {
-                menuButton.classList.remove('hidden');
-            }, 300);
-        }
-
-        // Close menu with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeMenu();
-            }
-        });
-    </script>
 </body>
 </html> 
