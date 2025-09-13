@@ -359,7 +359,7 @@
             
             // Pendulum parameters - HIGHLY sensitive to opening time
             this.g = 0.5 + (this.timeSeed % 10000) / 10000 * 1.5; // Gravity varies dramatically (0.5-2.0)
-            this.dt = 0.1 + (this.timeSeed % 5000) / 5000 * 0.05; // Time step varies dramatically (0.1-0.15)
+            this.dt = 0.15 + (this.timeSeed % 5000) / 5000 * 0.1; // Time step varies dramatically (0.15-0.25)
             
             // Pendulum 1 - HIGHLY sensitive to opening time
             this.l1 = 80 + (this.timeSeed % 10000) / 10000 * 20; // Length varies dramatically (80-100px)
