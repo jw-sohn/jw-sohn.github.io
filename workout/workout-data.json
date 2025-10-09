@@ -1,0 +1,241 @@
+{
+  "월요일": {
+    "focus": "등 + 교정",
+    "exercises": [
+      {
+        "name": "랫풀다운 (와이드)",
+        "sets": 4,
+        "weight": 35,
+        "reps": 10,
+        "effect": "광배 넓이, 어깨 펴기"
+      },
+      {
+        "name": "시티드 케이블 로우",
+        "sets": 4,
+        "weight": 35,
+        "reps": 10,
+        "effect": "등 두께, 자세 안정"
+      },
+      {
+        "name": "페이스 풀",
+        "sets": 3,
+        "weight": 15,
+        "reps": 12,
+        "effect": "견갑 안정, 라운드숄더 교정"
+      },
+      {
+        "name": "바벨 컬",
+        "sets": 3,
+        "weight": 25,
+        "reps": 10,
+        "effect": "이두 발달"
+      }
+    ]
+  },
+  "화요일": {
+    "focus": "가슴 + 삼두",
+    "exercises": [
+      {
+        "name": "벤치프레스",
+        "sets": 4,
+        "weight": 50,
+        "reps": 8,
+        "effect": "가슴 중심 성장"
+      },
+      {
+        "name": "인클라인 덤벨 프레스",
+        "sets": 3,
+        "weight": 12,
+        "reps": 10,
+        "effect": "상부 가슴, 자세 교정"
+      },
+      {
+        "name": "체스트 플라이",
+        "sets": 3,
+        "weight": 25,
+        "reps": 12,
+        "effect": "가슴 펌핑, 자세 밸런스"
+      },
+      {
+        "name": "트라이셉스 푸시다운",
+        "sets": 3,
+        "weight": 20,
+        "reps": 12,
+        "effect": "삼두 외측 강화"
+      }
+    ]
+  },
+  "수요일": {
+    "focus": "어깨 + 코어",
+    "exercises": [
+      {
+        "name": "오버헤드 프레스",
+        "sets": 4,
+        "weight": 25,
+        "reps": 8,
+        "effect": "전·측면 삼각근 강화"
+      },
+      {
+        "name": "사이드 레터럴 레이즈",
+        "sets": 3,
+        "weight": 6,
+        "reps": 12,
+        "effect": "어깨 라인 형성"
+      },
+      {
+        "name": "리어 델트 펙플라이",
+        "sets": 3,
+        "weight": 17,
+        "reps": 12,
+        "effect": "후면 어깨, 등 상부 균형"
+      },
+      {
+        "name": "플랭크",
+        "sets": 3,
+        "weight": 75,
+        "reps": 60,
+        "effect": "코어·자세 유지"
+      }
+    ]
+  },
+  "목요일": {
+    "focus": "등(보조) + 교정",
+    "exercises": [
+      {
+        "name": "원암 덤벨 로우",
+        "sets": 3,
+        "weight": 16,
+        "reps": 10,
+        "effect": "좌우 균형, 중간 등"
+      },
+      {
+        "name": "리어 델트 플라이",
+        "sets": 3,
+        "weight": 17,
+        "reps": 12,
+        "effect": "후면 삼각근, 견갑 안정"
+      },
+      {
+        "name": "백 익스텐션",
+        "sets": 3,
+        "weight": 75,
+        "reps": 15,
+        "effect": "척추기립근 강화, 허리 펴기"
+      },
+      {
+        "name": "해머 컬",
+        "sets": 3,
+        "weight": 12,
+        "reps": 12,
+        "effect": "전완 + 팔 라인"
+      }
+    ]
+  },
+  "금요일": {
+    "focus": "가슴 + 어깨",
+    "exercises": [
+      {
+        "name": "덤벨 벤치프레스",
+        "sets": 4,
+        "weight": 14,
+        "reps": 10,
+        "effect": "중·하부 가슴"
+      },
+      {
+        "name": "인클라인 머신 프레스",
+        "sets": 3,
+        "weight": 40,
+        "reps": 10,
+        "effect": "상부 가슴"
+      },
+      {
+        "name": "케이블 크로스오버",
+        "sets": 3,
+        "weight": 20,
+        "reps": 12,
+        "effect": "펌핑 및 균형"
+      },
+      {
+        "name": "덤벨 숄더프레스",
+        "sets": 3,
+        "weight": 11,
+        "reps": 8,
+        "effect": "어깨 전체"
+      },
+      {
+        "name": "페이스 풀",
+        "sets": 3,
+        "weight": 15,
+        "reps": 12,
+        "effect": "어깨 안정화"
+      }
+    ]
+  },
+  "토요일": {
+    "focus": "등 (강화 루틴)",
+    "exercises": [
+      {
+        "name": "랫풀다운 (일반)",
+        "sets": 4,
+        "weight": 32,
+        "reps": 10,
+        "effect": "광배 중심"
+      },
+      {
+        "name": "시티드 로우",
+        "sets": 4,
+        "weight": 35,
+        "reps": 10,
+        "effect": "등 두께"
+      },
+      {
+        "name": "친업(풀업)",
+        "sets": 3,
+        "weight": 75,
+        "reps": 8,
+        "effect": "광배 + 승모"
+      },
+      {
+        "name": "백 익스텐션",
+        "sets": 3,
+        "weight": 75,
+        "reps": 15,
+        "effect": "하부 등 강화"
+      }
+    ]
+  },
+  "일요일": {
+    "focus": "회복 + 자세 스트레칭",
+    "exercises": [
+      {
+        "name": "밴드 풀어파트",
+        "sets": 3,
+        "weight": 75,
+        "reps": 15,
+        "effect": "흉근 이완, 어깨 교정"
+      },
+      {
+        "name": "도어 스트레칭",
+        "sets": 3,
+        "weight": 75,
+        "reps": 30,
+        "effect": "가슴 열기"
+      },
+      {
+        "name": "요가 캣-카우 / 코브라",
+        "sets": 3,
+        "weight": 75,
+        "reps": 30,
+        "effect": "척추 신전"
+      },
+      {
+        "name": "플랭크 or 크런치",
+        "sets": 3,
+        "weight": 75,
+        "reps": 60,
+        "effect": "코어 유지"
+      }
+    ]
+  }
+}
+
