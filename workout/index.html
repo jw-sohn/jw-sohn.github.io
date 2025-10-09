@@ -761,7 +761,7 @@
         }
         
         .bar-chart {
-          height: 150px;
+          height: 300px;
         }
       }
     </style>
@@ -1276,11 +1276,12 @@
                 };
             });
             
-            const maxVolume = Math.max(...volumeData.map(d => d.totalVolume));
-            const avgVolume = volumeData.reduce((sum, d) => sum + d.totalVolume, 0) / volumeData.length;
-            // Scale based on average - average bar should be at 60% height
-            const scaledMax = avgVolume / 0.6;
-            const minHeightPercent = 30; // Minimum height as percentage of chart
+            // Use P90 scaling so typical bars fill the chart
+            const volumes = volumeData.map(d => d.totalVolume).filter(v => isFinite(v));
+            const sortedVolumes = [...volumes].sort((a, b) => a - b);
+            const p90 = sortedVolumes.length ? sortedVolumes[Math.floor(0.9 * (sortedVolumes.length - 1))] : 0;
+            const referenceVolume = p90 || Math.max(...volumes, 1);
+            const scaledMax = referenceVolume / 0.9; // P90 reaches ~90% height
             
             container.innerHTML = volumeData.map(record => {
                 const shortDate = record.date.slice(5); // MM-DD
@@ -1289,8 +1290,8 @@
                 let stackedBars = '';
                 const baseColor = '#333333'; // Grayscale color for all sets
                 
-                // Calculate total height as percentage, then divide by number of reps
-                const totalHeight = Math.max((record.totalVolume / scaledMax) * 100, minHeightPercent);
+                // Calculate total height as percentage (clamped), then divide by number of reps
+                const totalHeight = Math.min(100, (record.totalVolume / scaledMax) * 100);
                 const heightPerRep = totalHeight / (record.sets * record.reps);
                 
                 // Build bars for each set
@@ -1404,11 +1405,12 @@
                     };
                 });
                 
-                const maxVolume = Math.max(...chartData.map(d => d.totalVolume));
-                const avgVolume = chartData.reduce((sum, d) => sum + d.totalVolume, 0) / chartData.length;
-                // Scale based on average - average bar should be at 60% height
-                const scaledMax = avgVolume / 0.6;
-                const minHeightPercent = 30; // Minimum height as percentage of chart
+                // Use P90 scaling so typical bars fill the chart
+                const totals = chartData.map(d => d.totalVolume).filter(v => isFinite(v));
+                const sortedTotals = [...totals].sort((a, b) => a - b);
+                const p90 = sortedTotals.length ? sortedTotals[Math.floor(0.9 * (sortedTotals.length - 1))] : 0;
+                const referenceTotal = p90 || Math.max(...totals, 1);
+                const scaledMax = referenceTotal / 0.9; // P90 reaches ~90% height
                 
                 historyContent.innerHTML = `
                     <div class="chart-section">
@@ -1461,16 +1463,13 @@
                     
                     // Build stacked bars for each exercise
                     let stackedBars = '';
-                    let currentHeight = 0;
                     
                     exerciseNames.forEach(exerciseName => {
                         const volume = data.exerciseVolumes[exerciseName];
                         if (volume > 0) {
-                            const heightPercent = Math.max((volume / scaledMax) * 100, minHeightPercent / exerciseNames.length);
+                            const heightPercent = Math.min(100, (volume / scaledMax) * 100);
                             const color = exerciseColors[exerciseName];
-                            
                             stackedBars += `<div class="bar-stack" style="height: ${heightPercent}%; background: ${color}; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.3); box-sizing: border-box;" title="${exerciseName}: ${volume.toFixed(0)}kg"></div>`;
-                            currentHeight += heightPercent;
                         }
                     });
                     
