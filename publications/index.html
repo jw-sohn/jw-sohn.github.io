@@ -68,6 +68,7 @@
         background: white;
         position: relative;
         scroll-behavior: smooth;
+        cursor: pointer;
       }
       
       .publication-logo:hover {
@@ -83,7 +84,7 @@
         height: auto;
         object-fit: contain;
         padding: 4px;
-        transition: all 0.3s ease;
+        transition: none;
       }
       
       .publication-logo:hover img {
@@ -96,7 +97,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        animation: horizontalScroll 6s ease-in-out infinite;
+        animation: horizontalScroll var(--scroll-duration, 12s) linear infinite;
+        animation-delay: 0s;
+        transition: none;
       }
       
       @keyframes horizontalScroll {
@@ -104,7 +107,7 @@
           transform: translateX(0);
         }
         50% {
-          transform: translateX(-50%);
+          transform: translateX(calc(-100% + 144px));
         }
         100% {
           transform: translateX(0);
@@ -263,6 +266,60 @@
           margin: 0 20px !important;
         }
       }
+
+      /* Image Popup Modal */
+      .image-popup {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        cursor: pointer;
+        animation: fadeIn 0.3s ease;
+      }
+
+      .image-popup.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-popup img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        animation: zoomIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes zoomIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+
+      .close-popup {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10001;
+      }
+
+      .close-popup:hover {
+        color: #ccc;
+      }
     </style>
 </head>
 <body>
@@ -372,7 +429,7 @@
 
         <div class="publication-item">
             <div class="publication-logo">
-                <img src="../images/publication/archerqa.png" alt="ArchEHR-QA">
+                <img src="../images/publication/ArchEHR-QA.png" alt="ArchEHR-QA">
             </div>
             <div class="publication-content">
                 <h3>[2] DMIS Lab at ArchEHR-QA 2025: Evidence-Grounded Answer Generation for EHR-based QA via a Multi-Agent Framework</h3>
@@ -392,6 +449,93 @@
             </div>
         </div>
     </div>
+
+    <!-- Image Popup Modal -->
+    <div id="imagePopup" class="image-popup">
+        <span class="close-popup">&times;</span>
+        <img id="popupImage" src="" alt="">
+    </div>
+
+    <script>
+        // Get all publication logos
+        const publicationLogos = document.querySelectorAll('.publication-logo');
+        const popup = document.getElementById('imagePopup');
+        const popupImage = document.getElementById('popupImage');
+        const closePopup = document.querySelector('.close-popup');
+
+        // Calculate scroll duration based on image width to maintain constant visual speed
+        function calculateScrollDuration(img) {
+            const containerWidth = 144; // Container width in pixels
+            const containerHeight = 144; // Container height in pixels
+            const targetVisualSpeed = 0.2; // Target visual speed: 0.2 container-widths per second
+            
+            // Calculate the actual displayed width when zoomed (100% height of container)
+            const aspectRatio = img.naturalWidth / img.naturalHeight;
+            const displayedWidth = containerHeight * aspectRatio;
+            
+            // The animation moves the image by calc(-100% + 144px)
+            // This means it moves by: displayedWidth - containerWidth
+            const actualMovementDistance = Math.max(0, displayedWidth - containerWidth);
+            
+            // Convert movement distance to "container widths" for consistent visual speed
+            const movementInContainerWidths = actualMovementDistance / containerWidth;
+            
+            // Calculate duration based on visual distance to maintain constant visual speed
+            const duration = movementInContainerWidths / targetVisualSpeed;
+            
+            // Set reasonable bounds (minimum 2s, maximum 12s)
+            return Math.max(2, Math.min(12, duration));
+        }
+
+        // Set up hover animations for each logo
+        publicationLogos.forEach(logo => {
+            const img = logo.querySelector('img');
+            if (img) {
+                // Wait for image to load to get natural dimensions
+                img.addEventListener('load', function() {
+                    const duration = calculateScrollDuration(this);
+                    logo.style.setProperty('--scroll-duration', `${duration}s`);
+                });
+                
+                // If image is already loaded
+                if (img.complete) {
+                    const duration = calculateScrollDuration(img);
+                    logo.style.setProperty('--scroll-duration', `${duration}s`);
+                }
+            }
+            
+            // Add click event listener
+            logo.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                if (img) {
+                    popupImage.src = img.src;
+                    popupImage.alt = img.alt;
+                    popup.classList.add('show');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+            });
+        });
+
+        // Close popup when clicking the X or outside the image
+        closePopup.addEventListener('click', closeImagePopup);
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                closeImagePopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && popup.classList.contains('show')) {
+                closeImagePopup();
+            }
+        });
+
+        function closeImagePopup() {
+            popup.classList.remove('show');
+            document.body.style.overflow = 'auto'; // Restore background scrolling
+        }
+    </script>
 
 </body>
 </html> 
