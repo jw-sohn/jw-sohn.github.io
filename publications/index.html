@@ -66,9 +66,12 @@
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         transition: all 0.2s ease;
         background: white;
+        position: relative;
+        scroll-behavior: smooth;
       }
       
       .publication-logo:hover {
+        overflow: auto;
         transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       }
@@ -80,6 +83,19 @@
         height: auto;
         object-fit: contain;
         padding: 4px;
+        transition: all 0.3s ease;
+      }
+      
+      .publication-logo:hover img {
+        max-height: none;
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
       
       .publication-content {
