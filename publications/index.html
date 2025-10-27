@@ -89,31 +89,25 @@
       .publication-logo:hover img {
         max-height: none;
         max-width: none;
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: cover;
         padding: 0;
         position: absolute;
         top: 0;
         left: 0;
-        animation: slowScroll 8s ease-in-out infinite;
+        animation: horizontalScroll 6s ease-in-out infinite;
       }
       
-      @keyframes slowScroll {
+      @keyframes horizontalScroll {
         0% {
-          transform: translate(0, 0);
-        }
-        25% {
-          transform: translate(-20%, -20%);
+          transform: translateX(0);
         }
         50% {
-          transform: translate(-40%, 0);
-        }
-        75% {
-          transform: translate(-20%, 20%);
+          transform: translateX(-50%);
         }
         100% {
-          transform: translate(0, 0);
+          transform: translateX(0);
         }
       }
       
