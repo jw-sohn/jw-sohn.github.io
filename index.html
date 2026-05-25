@@ -40,6 +40,7 @@
         font-size: 1.7em;
         font-weight: 600;
         letter-spacing: -0.01em;
+        line-height: 1.1;
         margin: 0;
         color: #000;
       }
@@ -63,10 +64,11 @@
       .meta-links .sep { color: #bbb; margin: 0 6px; }
 
       img.photo {
-        width: 124px;
-        height: 124px;
+        width: 160px;
+        height: 160px;
         object-fit: cover;
         display: block;
+        margin-top: 4px;
       }
 
       h2 {
@@ -133,10 +135,10 @@
         font-size: 0.85em;
         font-weight: 500;
       }
-      ol.pubs .title { font-weight: 600; color: #000; }
-      ol.pubs .authors { color: #444; }
-      ol.pubs .venue { font-style: italic; color: #555; }
-      ol.pubs .venue a { color: #555; border-bottom-color: #c4c4c4; }
+      ol.pubs .title { font-weight: 600; color: #000; display: block; }
+      ol.pubs .authors { color: #444; display: block; margin-top: 2px; }
+      ol.pubs .venue { font-style: italic; color: #1a1a1a; display: block; margin-top: 2px; }
+      ol.pubs .venue a { color: #1a1a1a; border-bottom-color: #c4c4c4; }
       ol.pubs .venue a:hover { color: #000; border-bottom-color: #000; }
       ol.pubs .me { color: #000; font-weight: 700; }
 
@@ -207,7 +209,7 @@
           (<a href="https://bsse.ethz.ch/" target="_blank">Medical AI Lab</a>) and
           <a href="https://htor.ethz.ch/" target="_blank">Torsten Hoefler</a>
           (<a href="https://spcl.inf.ethz.ch/" target="_blank">SPCL</a>).
-          I work on large language models and agentic systems for knowledge-intensive reasoning &mdash;
+          I work on large language models and agentic systems for knowledge-intensive reasoning:
           retrieval-augmented generation, post-training, process reward modeling, and test-time
           strategies. Previously at Yale and Korea University.
         </p>
@@ -253,24 +255,39 @@
         <span class="venue"><a href="https://med-prm.github.io/" target="_blank">EMNLP 2025 (Oral)</a>.</span>
       </li>
       <li>
-        <span class="title">Med-CoReasoner: Reducing Language Disparities in Medical Reasoning via Language-Informed Co-Reasoning.</span>
-        <span class="authors">Fan Gao, Sherry T. Tong, <span class="me">Jiwoong Sohn</span>, Jiahao Huang, Junfeng Jiang, Ding Xia, et al.</span>
-        <span class="venue"><a href="https://arxiv.org/abs/2601.08267" target="_blank">ACL 2026</a>.</span>
-      </li>
-      <li>
         <span class="title">Rationale-Guided Retrieval Augmented Generation for Medical Question Answering.</span>
-        <span class="authors"><span class="me">Jiwoong Sohn</span>, Yein Park, Chanwoong Yoon, Sihyun Park, Mujeen Sung, Hyunjae Kim†, Jaewoo Kang†.</span>
+        <span class="authors"><span class="me">Jiwoong Sohn</span>, Yein Park, Chanwoong Yoon, Sihyeon Park, Hyeon Hwang, Mujeen Sung, Hyunjae Kim†, Jaewoo Kang†.</span>
         <span class="venue"><a href="https://aclanthology.org/2025.naacl-long.635/" target="_blank">NAACL 2025 (Oral)</a>.</span>
       </li>
       <li>
         <span class="title">MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for Complex Medical Reasoning.</span>
-        <span class="authors">Xiangru Tang*, Daniel Shao*, <span class="me">Jiwoong Sohn</span>*, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, et al.</span>
+        <span class="authors">Daniel Shao*, Xiangru Tang*, <span class="me">Jiwoong Sohn</span>*, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein.</span>
         <span class="venue"><a href="https://arxiv.org/abs/2503.07459" target="_blank">Patterns</a>.</span>
       </li>
       <li>
         <span class="title">Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models.</span>
-        <span class="authors">Minbyul Jeong, <span class="me">Jiwoong Sohn</span>, Mujeen Sung, Jaewoo Kang†.</span>
+        <span class="authors">Minbyul Jeong, <span class="me">Jiwoong Sohn</span>, Mujeen Sung†, Jaewoo Kang†.</span>
         <span class="venue"><a href="https://academic.oup.com/bioinformatics/article/40/Supplement_1/i119/7700892" target="_blank">ISMB 2024, Bioinformatics (Oral)</a>.</span>
+      </li>
+      <li>
+        <span class="title">Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights.</span>
+        <span class="authors">Hyunjae Kim, <span class="me">Jiwoong Sohn</span>, Aidan Gilson, Nicholas Cochran-Caggiano, Serina Applebaum, Heeju Jin, Seihee Park, Yujin Park, Jiyeong Park, Seoyoung Choi, Brittany Alexandra Herrera Contreras, Thomas Huang, Jaehoon Yun, Ethan F. Wei, Roy Jiang, Leah Colucci, Eric Lai, Amisha Dave, Tuo Guo, Maxwell B. Singer, Yonghoe Koo, Ron A. Adelman, James Zou, Andrew Taylor, Arman Cohan, Hua Xu, Qingyu Chen.</span>
+        <span class="venue"><a href="https://arxiv.org/abs/2511.06738" target="_blank">arXiv:2511.06738 (2025)</a>.</span>
+      </li>
+      <li>
+        <span class="title">Small Language Models Learn Enhanced Reasoning Skills from Medical Textbooks.</span>
+        <span class="authors">Hyunjae Kim, Hyeon Hwang, Jiwoo Lee, Sihyeon Park, Dain Kim, Taewhoo Lee, Chanwoong Yoon, <span class="me">Jiwoong Sohn</span>, Jungwoo Park, Olga Reykhart, Thomas Fetherston, Donghee Choi, Soo Heon Kwak, Qingyu Chen, Jaewoo Kang.</span>
+        <span class="venue"><a href="https://arxiv.org/abs/2404.00376" target="_blank">npj Digital Medicine</a>.</span>
+      </li>
+      <li>
+        <span class="title">RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography.</span>
+        <span class="authors">Mélanie Roschewitz, Kenneth Styppa, Yitian Tao, <span class="me">Jiwoong Sohn</span>, Jean-Benoit Delbrouck, Benjamin Gundersen, Nicolas Deperrois, Christian Bluethgen, Julia Vogt, Bjoern Menze, Farhad Nooralahzadeh, Michael Krauthammer, Michael Moor.</span>
+        <span class="venue"><a href="https://arxiv.org/abs/2604.15231" target="_blank">arXiv:2604.15231 (2026)</a>.</span>
+      </li>
+      <li>
+        <span class="title">Med-CoReasoner: Reducing Language Disparities in Medical Reasoning via Language-Informed Co-Reasoning.</span>
+        <span class="authors">Fan Gao, Sherry T. Tong, <span class="me">Jiwoong Sohn</span>, Jiahao Huang, Junfeng Jiang, Ding Xia, Piyalitt Ittichaiwong, Kanyakorn Veerakanjana, Hyunjae Kim, Qingyu Chen, Edison Marrese Taylor, Kazuma Kobayashi, Akiko Aizawa, Irene Li.</span>
+        <span class="venue"><a href="https://arxiv.org/abs/2601.08267" target="_blank">ACL 2026</a>.</span>
       </li>
     </ol>
 
