@@ -15,6 +15,8 @@
 \usepackage{array} % tabularx requires this
 \usepackage[dvipsnames]{xcolor} % for coloring text
 \definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\definecolor{accentTeal}{RGB}{42, 110, 122} % section headings, name & links
+\definecolor{contactGray}{RGB}{90, 90, 90} % neutral header contact links
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
@@ -28,10 +30,10 @@
 \definecolor{DarkBlue}{RGB}{55,90,150}
 \hypersetup{
     colorlinks=true,
-    linkcolor=DarkBlue, % color of internal links (like table of contents)
-    citecolor=DarkBlue, % color of citation links
-    urlcolor=DarkBlue, % color of URLs
-    allcolors=DarkBlue % color of all types of links
+    linkcolor=accentTeal, % color of internal links (like table of contents)
+    citecolor=accentTeal, % color of citation links
+    urlcolor=accentTeal, % color of URLs
+    allcolors=accentTeal % color of all types of links
 }
 \usepackage[pscoord]{eso-pic} % for floating text on the page
 \usepackage{calc} % for calculating lengths
@@ -65,7 +67,7 @@
 
 \AtBeginDocument{\fontsize{11pt}{13pt}\selectfont}
 
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\Large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titleformat{\section}{\needspace{4\baselineskip}\Large\scshape\color{accentTeal}}{}{0pt}{}[\vspace{2pt}{\color{accentTeal!55}\titlerule[0.7pt]}]
 
 \titlespacing{\section}{
     % left space:
@@ -169,44 +171,22 @@
     \newsavebox\ANDbox
     \sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{20 pt}{20 pt}\selectfont Jiwoong (Andrew) Sohn
+    \begin{minipage}[b]{0.60\textwidth}
+        {\fontsize{26pt}{26pt}\selectfont\color{accentTeal}Jiwoong (Andrew) Sohn}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.39\textwidth}
+        \raggedleft\small
+        \hypersetup{urlcolor=contactGray}%
+        \hrefWithoutArrow{https://jw-sohn.github.io}{jw-sohn.github.io}\\
+        \hrefWithoutArrow{mailto:jisohn@ethz.ch}{jisohn@ethz.ch}\\
+        \hrefWithoutArrow{https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en}{Google Scholar}\\
+        \hrefWithoutArrow{https://www.linkedin.com/in/jiwoong-sohn/}{LinkedIn}
+    \end{minipage}
 
-        \vspace{5 pt}
+    \vspace{2 pt}
 
-        \normalsize
-        %{\faMapMarker}{ 501B, Woojung Hall of Informatics, Korea University, 145 Anam-ro, Seongbuk-gu, Seoul, South Korea}\\
-
-%        {\faMapMarker}{ ETH Zurich, Medical AI Lab, Klingelbergstrasse 48,
-%4056 Basel, Switzerland}\\
-%        \vspace{-0.1cm}
-        \mbox{\faPhoneSquare}{\color{DarkBlue} +41 76 227 2414}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\faEnvelope} {\hrefWithoutArrow{mailto:jisohn@ethz.ch}{jisohn@ethz.ch}}%
-%{\hrefWithoutArrow{mailto:jiwoong.sohn@bsse.ethz.ch}{jiwoong.sohn@bsse.ethz.ch}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\faLinkedin} {\hrefWithoutArrow{https://www.linkedin.com/in/jiwoong-sohn/}{LinkedIn}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\faGlobe} {\hrefWithoutArrow{https://jw-sohn.github.io}{jw-sohn.github.io}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\faGraduationCap} {\hrefWithoutArrow{https://scholar.google.com/citations?user=5cUeXqIAAAAJ&hl=en}{Google Scholar}}%
-%        \kern 5.0 pt%
-%        \AND%
-%        \kern 5.0 pt%
-%        \mbox{\faGithub} %{\hrefWithoutArrow{https://github.com/ahwatnow}{GitHub}}%
-    \end{header}
-
-    \vspace{5 pt - 0.0 cm}
-
-\section{PROFILE}
+\section{Profile}
 \vspace{0.2 cm}
 
 \begin{onecolentry}
@@ -214,13 +194,14 @@
 \end{onecolentry}
 \vspace{0.2 cm}
 
-\section{EDUCATION}
+\section{Education}
 \vspace{0.2 cm}
         \begin{twocolentry}{
-        2025 -- Present\\ 
+        Z\"urich, Switzerland\\
+        2025 -- Present
         }
-        {\large\textbf{ETH Zurich}}\\
-        \textit{Doctor of Science (PhD) in Medical AI}
+        \textbf{ETH Zurich}\\
+        Doctor of Science (PhD) in Medical AI
         
         \end{twocolentry}
         
@@ -231,10 +212,11 @@
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
+        Seoul, South Korea\\
         2025
         }
-        {\large\textbf{Korea University}}\\
-        \textit{Master of Science (MSc) in Computer Science}
+        \textbf{Korea University}\\
+        Master of Science (MSc) in Computer Science
         
         \end{twocolentry}
         
@@ -249,9 +231,10 @@
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
+            Seoul, South Korea\\
             2023
         }
-            {\large\textbf{Korea University}}\\\textit{Bachelor of Science (BSc), Bachelor of Engineering (BEng)}
+            \textbf{Korea University}\\Bachelor of Science (BSc), Bachelor of Engineering (BEng)
         \end{twocolentry}
 
         \begin{highlights}
@@ -260,22 +243,24 @@
         \end{highlights}
     \vspace{0.2 cm}
 
-\section{RESEARCH EXPERIENCE}
+\section{Research Experience}
 \vspace{0.2 cm}
 \begin{twocolentry}{
-    May 2025 -- Present\\ 
+    Z\"urich, Switzerland\\
+    May 2025 -- Present
 }
-{\large\textbf{ETH Zurich, ETH AI Center | Medical AI Lab}} \href{https://bsse.ethz.ch/mail}{\faExternalLink*}\\
-\textit{Doctoral Researcher} (Advisors: \href{https://www.michaelmoor.me/}{Michael Moor}, \href{https://htor.ethz.ch/}{Torsten Hoefler})
+\textbf{ETH Zurich, ETH AI Center | Medical AI Lab} \href{https://bsse.ethz.ch/mail}{\faExternalLink*}\\
+Doctoral Researcher (Advisors: \href{https://www.michaelmoor.me/}{Michael Moor}, \href{https://htor.ethz.ch/}{Torsten Hoefler})
 \end{twocolentry}
 \vspace{0.2 cm}
 
 
 \begin{twocolentry}{
-    Aug 2024 -- Apr 2025\\ 
+    New Haven, CT\\
+    Aug 2024 -- Apr 2025
 }
-{\large\textbf{Yale University | Gerstein Lab}} \href{https://www.gersteinlab.org/}{\faExternalLink*}\\
-\textit{Research Assistant} (Advisor: \href{https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en}{Mark Gerstein}, Mentor: \href{https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en}{Xiangru Tang})
+\textbf{Yale University | Gerstein Lab} \href{https://www.gersteinlab.org/}{\faExternalLink*}\\
+Research Assistant (Advisor: \href{https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en}{Mark Gerstein}, Mentor: \href{https://scholar.google.com.hk/citations?user=gGcRkpYAAAAJ&hl=en}{Xiangru Tang})
 \end{twocolentry}
 % \vspace{0.2 cm}
 % \begin{highlights}
@@ -290,10 +275,11 @@
 
 \vspace{0.2 cm}
 \begin{twocolentry}{
-    Dec 2024 -- Apr 2025\\ 
+    New Haven, CT\\
+    Dec 2024 -- Apr 2025
 }
-{\large\textbf{Yale University | Qingyu Chen's Lab}} \href{https://sites.google.com/view/qingyuchen/home/}{\faExternalLink*}\\
-\textit{Research Assistant} (Advisor: \href{https://scholar.google.com/citations?user=FSLotiMAAAAJ&hl=en}{Qingyu Chen}, Mentor: \href{https://scholar.google.com/citations?user=rqBpumIAAAAJ&hl=en}{Hyunjae Kim})
+\textbf{Yale University | Qingyu Chen's Lab} \href{https://sites.google.com/view/qingyuchen/home/}{\faExternalLink*}\\
+Research Assistant (Advisor: \href{https://scholar.google.com/citations?user=FSLotiMAAAAJ&hl=en}{Qingyu Chen}, Mentor: \href{https://scholar.google.com/citations?user=rqBpumIAAAAJ&hl=en}{Hyunjae Kim})
 \end{twocolentry}
 % \vspace{0.2 cm}
 % \begin{highlights}
@@ -307,10 +293,11 @@
 
 \vspace{0.3 cm}      
 \begin{twocolentry}{
-    Mar 2023 -- Apr 2025\\ 
+    Seoul, South Korea\\
+    Mar 2023 -- Apr 2025
 }
-{\large\textbf{Korea University | Data Mining and Information Systems Lab}} \href{https://dmis.korea.ac.kr/home}{\faExternalLink*}\\
-\textit{Research Assistant} (Advisor: \href{https://scholar.google.com/citations?user=RaBZafQAAAAJ&hl=en}{Jaewoo Kang})
+\textbf{Korea University | Data Mining and Information Systems Lab} \href{https://dmis.korea.ac.kr/home}{\faExternalLink*}\\
+Research Assistant (Advisor: \href{https://scholar.google.com/citations?user=RaBZafQAAAAJ&hl=en}{Jaewoo Kang})
 \end{twocolentry}
 % \vspace{0.2 cm}
 % \begin{highlights}
@@ -340,7 +327,7 @@
 %     \end{highlights}
 % \end{highlights}
 \vspace{0.2 cm}
-\section{SELECTED PUBLICATIONS}
+\section{Selected Publications}
 %\vspace{0.2 cm}
 
 \begin{onecolentry}
@@ -460,7 +447,7 @@
 %\end{onecolentry}
 %\vspace{0.3 cm}
 
-\section{INVITED TALKS}
+\section{Invited Talks}
 \vspace{0.2 cm}
 
 \begin{twocolentry}{Oct. 2025}
@@ -475,7 +462,7 @@
 \end{twocolentry}
 \vspace{0.3 cm}
 
-\section{HONORS AND AWARDS}
+\section{Honors and Awards}
     \vspace{0.2 cm}
 
     \begin{onecolentry}
@@ -668,7 +655,7 @@
     \end{twocolentry}
     \vspace{0.1 cm}
 
-\section{TEACHING EXPERIENCE}
+\section{Teaching Experience}
 
         \begin{twocolentry}{
             Fall 2025\\ 
@@ -719,7 +706,7 @@
     \vspace{0.15 cm}
 
 
-\section{TECHNICAL SKILLS}
+\section{Technical Skills}
         \begin{onecolentry}
         \textbf{LLM}: PyTorch, Hugging Face (Transformers, Datasets, Accelerate, PEFT, TRL), vLLM, DeepSpeed, Unsloth, LoRA/QLoRA, DDP/torchrun \\ 
         \vspace{0.08 cm}
@@ -747,7 +734,7 @@
             \vspace{0.15 cm}
 
 
-\section{LEADERSHIP AND EXTRACURRICULAR ACTIVITIES}
+\section{Leadership and Extracurricular Activities}
         \begin{twocolentry}{
              Jul 2022 -- Jan 2023\\ 
         }
@@ -803,20 +790,29 @@
     % \end{highlights}
             \vspace{0.15 cm}
 
-\section{ACADEMIC SERVICE}
+\section{Academic Service}
 
 \begin{onecolentry}
     \textbf{Conference Reviewer}
     \begin{highlights}
-        \item NeurIPS (2026)
+        \item NeurIPS (2026, Emergency Reviewer)
         \item ICML (2026, Gold Reviewer)
         \item ACL (2025, SRW)
         \item EMNLP (2024)
     \end{highlights}
 \end{onecolentry}
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+    \textbf{Journal Reviewer}
+    \begin{highlights}
+        \item PLOS Digital Health (Q1, IF 7.7)
+        \item PLOS ONE (IF 2.6)
+    \end{highlights}
+\end{onecolentry}
 \vspace{0.15 cm}
 
-\section{LANGUAGES}
+\section{Languages}
     
         \begin{onecolentry}
         \textbf{Korean} (Native)  

@@ -12,6 +12,12 @@
       html, body { box-sizing: border-box; margin: 0; padding: 0; }
       *, *::before, *::after { box-sizing: inherit; }
 
+      :root {
+        --accent: #2a6e7a;
+        --accent-dark: #1f545e;
+        --accent-line: rgba(42, 110, 122, 0.30);
+      }
+
       body {
         font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
         font-size: 15px;
@@ -24,8 +30,8 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #c4c4c4; }
-      a:hover { color: #000; border-bottom-color: #000; }
+      a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); }
+      a:hover { color: var(--accent-dark); border-bottom-color: var(--accent); }
       p { margin: 0 0 12px 0; }
 
       header.intro {
@@ -42,7 +48,7 @@
         letter-spacing: -0.01em;
         line-height: 1.1;
         margin: 0;
-        color: #000;
+        color: var(--accent);
       }
       .tagline {
         font-style: italic;
@@ -60,7 +66,8 @@
         color: #666;
         margin-top: 2px;
       }
-      .meta-links a { color: #444; }
+      .meta-links a { color: #555; border-bottom-color: #dcdcdc; }
+      .meta-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
       .meta-links .sep { color: #bbb; margin: 0 6px; }
 
       img.photo {
@@ -76,7 +83,7 @@
         font-style: italic;
         font-weight: 400;
         font-size: 1.1em;
-        color: #000;
+        color: var(--accent);
         margin: 40px 0 12px 0;
         padding: 0;
         border: none;
@@ -85,7 +92,7 @@
         content: "";
         display: block;
         width: 40px;
-        border-bottom: 1px solid #1a1a1a;
+        border-bottom: 1px solid var(--accent);
         margin-top: 4px;
       }
 
@@ -138,8 +145,8 @@
       ol.pubs .title { font-weight: 600; color: #000; display: block; }
       ol.pubs .authors { color: #444; display: block; margin-top: 2px; }
       ol.pubs .venue { font-style: italic; color: #1a1a1a; display: block; margin-top: 2px; }
-      ol.pubs .venue a { color: #1a1a1a; border-bottom-color: #c4c4c4; }
-      ol.pubs .venue a:hover { color: #000; border-bottom-color: #000; }
+      ol.pubs .venue a { color: var(--accent); border-bottom-color: var(--accent-line); }
+      ol.pubs .venue a:hover { color: var(--accent-dark); border-bottom-color: var(--accent); }
       ol.pubs .me { color: #000; font-weight: 700; }
 
       .legend {
@@ -159,8 +166,8 @@
       }
       .row .where { font-weight: 600; color: #000; }
       .row .meta { color: #666; }
-      .row a { color: #1a1a1a; border-bottom: 1px solid #c4c4c4; }
-      .row a:hover { color: #000; border-bottom-color: #000; }
+      .row a { color: var(--accent); border-bottom: 1px solid var(--accent-line); }
+      .row a:hover { color: var(--accent-dark); border-bottom-color: var(--accent); }
 
       footer {
         margin-top: 60px;
@@ -291,7 +298,8 @@
     </ol>
 
     <h2>Academic Service</h2>
-    <div class="row"><span class="where">Conference Reviewer</span>: NeurIPS 2026, <a href="https://icml.cc/" target="_blank">ICML 2026</a> (<strong>Gold Reviewer</strong>), ACL SRW 2025, EMNLP 2024.</div>
+    <div class="row"><span class="where">Conference Reviewer</span>: NeurIPS 2026 (Emergency Reviewer), ICML 2026 (<strong>Gold Reviewer</strong>), ACL SRW 2025, EMNLP 2024.</div>
+    <div class="row"><span class="where">Journal Reviewer</span>: PLOS Digital Health (Q1, IF 7.7), PLOS ONE (IF 2.6).</div>
 
     <h2>Education</h2>
     <div class="row"><span class="where">PhD</span>, ETH Zürich, 2025&ndash;present. <span class="meta">Co-advised by Michael Moor (Medical AI Lab) and Torsten Hoefler (SPCL).</span></div>
